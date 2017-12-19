@@ -1,0 +1,10 @@
+<footer class="footer">
+  {% for item in site.data.settings.social %}
+	{% if item.icon == 'researchgate' or item.icon == 'google-scholar' or item.icon == 'figshare' or item.icon == 'orcid' or item.icon == 'overleaf' %}
+	  <a href="{{ item.link }}" class="menu-link" target="_blank"><i class="ai ai-{{ item.icon }}" aria-hidden="true"></i></a>
+	{% else %}
+      <a href="{{ item.link }}" class="menu-link" target="_blank"><i class="fa fa-{{ item.icon }}" aria-hidden="true"></i></a>
+	{% endif %}
+  {% endfor %}
+  <div class="post-date"><a href="{{ site.github.url }}/">{{ site.data.settings.title }} | {{ site.data.settings.tagline }} by {{ site.data.authors.primary.name }}</a></div>
+</footer>

@@ -1,0 +1,29 @@
+title:  "Jan Knappe"
+tagline: "a personal blog on science, coding, and globetrotting"
+
+# Authors documented under _data
+
+# Change to true for Disqus comments
+disqus:
+  comments: true
+  disqus_shortname: 'janknappe'
+
+menu:
+- {name: 'Science', folder: 'pages', file: 'science.html'}
+- {name: 'Coding', folder: 'pages', file: 'coding.html'}
+- {name: 'Globetrotting', folder: 'pages', file: 'globetrotting.html'}
+- {name: 'About', folder: 'pages', file: 'about.html'}
+- {name: 'Contact', folder: 'pages', file: 'contact.html'}
+
+# Available social icons are powered by Font Awesome, so you can use any icon that they offer
+social:
+- {icon: 'envelope', link: 'mailto:jan.knappe@tcd.ie'}
+- {icon: 'twitter', link: 'https://twitter.com/janknappe'}
+- {icon: 'github', link: 'https://github.com/jknappe'}
+- {icon: 'researchgate', link: 'https://www.researchgate.net/profile/Jan_Knappe'}
+- {icon: 'google-scholar', link: 'https://scholar.google.com/citations?user=b5iGQGMAAAAJ&hl=en'}
+- {icon: 'figshare', link: 'https://figshare.com/authors/Jan_Knappe/4693366'}
+- {icon: 'orcid', link: 'https://orcid.org/0000-0001-8568-0479'}
+- {icon: 'linkedin', link: 'https://www.linkedin.com/in/janknappe/'}
+- {icon: 'instagram', link: 'https://www.instagram.com/jan.whitespace/'}
+- {icon: 'rss', link: 'feed.xml'}
