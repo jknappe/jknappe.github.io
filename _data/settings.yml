@@ -13,6 +13,7 @@ menu:
 - {name: 'Coding', folder: 'pages', file: 'coding.html'}
 - {name: 'Globetrotting', folder: 'pages', file: 'globetrotting.html'}
 - {name: 'About', folder: 'pages', file: 'about.html'}
+- {name: 'Publications', folder: 'pages', file: 'publications.html'}
 - {name: 'Contact', folder: 'pages', file: 'contact.html'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
