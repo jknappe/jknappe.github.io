@@ -1,6 +1,6 @@
 ---
 layout: misc
-title: About
+title: Me
 ---
 
 ![Jan Knappe](/assets/img/Knappe_round.jpg){:class="img-responsive"}
