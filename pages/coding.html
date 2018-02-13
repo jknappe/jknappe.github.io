@@ -1,11 +1,27 @@
 ---
-layout: page
+layout: default
 title: Coding
 ---
-{% for post in site.categories.coding %}
-  <a href="{{ site.github.url }}{{ post.url }}">
-    <div class="featured-posts" {% if post.image.feature %}style="background-image:url({{ site.github.url }}/assets/img/{{ post.image.feature }})"{% endif %}>
-      <h2><span>{{ post.title }}</span></h2>
-    </div>
-  </a>
-{% endfor %}
+
+<div class="home" id="home">
+  
+  <h2 class="pageTitle">Coding</h2>
+  <ul class="posts noList">
+    {% for post in site.categories.coding %}
+      <li>
+        <span class="date">{{ post.date | date: '%B %d, %Y' }} | {{ post.content | number_of_words | divided_by:150 }} Minute Read</span>
+        <h3><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+        <p>{% if post.description %}{{ post.description }}{% else %}{{ post.excerpt | strip_html }}{% endif %}</p>
+      </li> 
+    {% endfor %}
+  </ul>
+  <!-- Pagination links -->
+  <div class="pagination">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous button__outline">Newer Posts</a> 
+    {% endif %}
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next button__outline">Older Posts</a>
+    {% endif %}
+  </div>
+</div>

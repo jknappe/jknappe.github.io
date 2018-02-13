@@ -1,22 +1,26 @@
 ---
 layout: post
-title: "Integrating Academicons with Font Awesome in the Millennial Jekyll template"
-author: "Jan Knappe"
+title: "Using Academicons and Font Awesome in Jekyll"
 categories: [coding]
 tags: [jekyll, academicons, Font Awesome, millenial, github pages, css, scss, social media, windows]
-image:
-  feature: 17-12-19-academicons/title.jpg
+image: 171219-academicons.jpg
 comments: true
+excerpt_separator: <!--more-->
 ---
 
-# Academic social media icons 
-Using the [Millennial](https://github.com/LeNPaul/Millennial){:target="_blank"} or other templates in a [Jekyll blog](https://jekyllrb.com/){:target="_blank"} can come with some friction when adjusting the template to your individual needs. For me, it is important to include social media icons both in the header and footer of my blog including links to my academic profiles on, e.g., Researchgate, Google Scholar, Figshare, and OrcID. The generic social media icons bundled in [Font Awesome](http://fontawesome.io/){:target="_blank"} do not include the above mentioned icons; but they can be loaded through [Academicons](http://jpswalsh.github.io/academicons/){:target="_blank"}, an extension to Font Awesome. The inplementation of Academicons with Font Awesome in a pre-defined templates is not as straight forward as integrating both in a custom-built Jekyll. We will have a look at how to achieve the integration within the Millennial template by 
+<p class="intro"><span class="dropcap">U</span>sing templates in Jekyll can come with some friction attached when adjusting the template to your individual needs. The social media icons bundled in Font Awesome, e.g., do not include some pages of relevance to researchers, like ResearchGate or Google Scholar. Academicons to the rescue!</p>
+
+<!--more-->
+
+Using the [Millennial](https://github.com/LeNPaul/Millennial){:target="_blank"} or other templates in a [Jekyll blog](https://jekyllrb.com/){:target="_blank"} can come with some friction when adjusting the template to your individual needs. For me, it is important to include social media icons both in the header and footer of my blog including links to my academic profiles on, e.g., Researchgate, Google Scholar, Figshare, and OrcID. The generic social media icons bundled in [Font Awesome](http://fontawesome.io/){:target="_blank"} do not include the above mentioned icons; but they can be loaded through [Academicons](http://jpswalsh.github.io/academicons/){:target="_blank"}, an extension to Font Awesome.
+
+The inplementation of Academicons with Font Awesome in a pre-defined templates is not as straight forward as integrating both in a custom-built Jekyll. We will have a look at how to achieve the integration within the Millennial template by 
 
 * installing the Academicon icons and .css files on your server, 
 * tweeking some of the Millennial template .html files, and 
 * adjusting the number of icons appearing in the header and footer, respectively.
 
-# Install Academicons
+### Installing Academicons
 Academicons is an extension to Font Awesome, providing icons for academic social media sites such as Academia, arXiv, Coursera, dataverse, doi, Figshare, Google Scholar, Mendeley, OrcID, Overleaf, PubMed, Resear Gate, Springer, Zotero, and many more. These icons are not natively included in Font Awesome. 
 
 Firstly, the Academicon fonts and .css classes have to be downloaded from the [Academicon GitHub project page](http://jpswalsh.github.io/academicons/){:target="_blank"}. Copy the `fonts` and `css` folders from the extracted .zip file into your local `/assets` folder in your blog directory. To link this style sheet to your Jekyll template, open `/_includes/head.html` in your preferred text editor and add a reference to the `academicons.css` just before the Font Awesome style sheet is called:
@@ -39,10 +43,10 @@ In case of the Millennial theme, the complete list of style sheet calls in `head
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 ```
 
-# Tweek the theme files
+### Tweek the theme files
 To be able to use the new icons on your blog, the template .html files need to be slighty tweeked. We need to, first, define the new icons that we want to use (I will use both the Research Gate and Google Scholar icon as example here), in the `/assets/css/_sass/_social-icons.scss` file and, then, let the template know that these icons are coming from the new Academicon style sheet, and not the standard Font Awesome style sheet. 
 
-### Define the new icons
+#### Define the new icons
 To be able to use the icons from within the `settings.yml` via
 
 ```
@@ -72,7 +76,7 @@ Now, we can use these colors in the call to the respective icon and include the 
 }
 ```
 
-### Differenciate between Font Awesome and Academicons
+#### Differenciate between Font Awesome and Academicons
 On default, the template converts all requested social media icons into calls to Font Awesome icons throught the specifications in `/_includes/header.html` and `/_includes/footer.html`. The existing liquid tag code 
 
 {% raw %}
@@ -110,7 +114,7 @@ in the .html output for each icon that we want to load from Academicons. To achi
 {% endraw %}
 
 
-# Adjust number of icons appearing in header and footer
+### Adjust number of icons appearing in header and footer
 In case you want to limit the number of social media icons in, let's say, the header (as compared to the footer), you can select the icons using an `if ... elsif ... else` statement in the liquid tag like this:
 
 {% raw %}

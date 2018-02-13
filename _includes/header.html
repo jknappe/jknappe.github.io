@@ -1,32 +1,14 @@
-<header class="site-header">
-  <h3 class="site-title">
-    <a href="{{ site.github.url }}/"><img src="{{ site.github.url }}/assets/img/JK-logo_small.jpg" alt="Jan Knappe" height="40"></a>
-  </h3>
-  <nav class="menu-list">
-    {% for item in site.data.settings.menu %}
-      <a href="{{ site.github.url }}/{{ item.folder }}/{{ item.file }}" class="menu-link">{{ item.name }}</a>
-    {% endfor %}
-
-    {% for item in site.data.settings.social %}
-      {% if item.icon == 'google-scholar' %}
-	    <a href="{{ item.link }}" class="menu-link" target="_blank"><i class="ai ai-{{ item.icon }}" aria-hidden="true"></i></a>
-	  {% elsif item.icon == 'envelope' or item.icon == 'twitter' or item.icon == 'github' %}
-	    <a href="{{ item.link }}" class="menu-link" target="_blank"><i class="fa fa-{{ item.icon }}" aria-hidden="true"></i></a>
-	  {% else %}
-        <!--empty-->
-	  {% endif %}
-    {% endfor %}
-  </nav>
-  <div class="dropdown">
-    <button class="dropbtn"><i class="fa fa-bars" aria-hidden="true"></i></button>
-    <div class="dropdown-content">
-      {% for item in site.data.settings.menu %}
-        <a href="{{ site.github.url }}/pages/{{ item.file }}" class="menu-link">{{ item.name }}</a>
-      {% endfor %}
-
-      {% for item in site.data.settings.social %}
-        <a href="{{ item.link }}" class="menu-link" target="_blank"><i class="fa fa-{{ item.icon }}" aria-hidden="true"></i></a>
-      {% endfor %}
-    </div>
-  </div>
-</header>
+ <div class="header">
+     <div class="container">
+         <h1 class="logo"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+         <nav class="nav-collapse">
+             <ul class="noList">
+                 {% for link in site.navigation %}{% assign current = nil %}{% if page.url contains link.url or forloop.first and page.url == '/' or page.url == 'index.html' %}{% assign current = 'current' %}{% endif %}
+                 <li class="element {% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}">
+                     <a href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a>
+                 </li> 
+                 {% endfor %}
+             </ul>
+         </nav>
+     </div>
+ </div><!-- end .header -->

@@ -1,6 +1,7 @@
 _site
-Gemfile.lock
 .sass-cache
-.jekyll-metadata
 .DS_Store
-_drafts
+.ruby-version
+node_modules
+
+*.pptx

@@ -1,23 +1,35 @@
-# Site Build Settings
+title: Jan Knappe
+description: a personal blog on science, coding, and globetrotting
 
-# jekyll-paginate configuration
-paginate:            20
+url: http://janknappe.com
+baseurl: ""
+paginate_path: "blog/page:num/"
+permalink: blog/:title/
 
-# Build settings
-markdown:            kramdown
-highlighter:         rouge
-permalink:           none
-plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
+markdown: kramdown
+highlighter: rouge
+gems: [jekyll-paginate]
+paginate: 10
 
-sass:
-  sass_dir: assets/css
-  style: :nested
+navigation:
+ - title: Home
+   url: /index.html
+ - title: Coding
+   url: /pages/coding
+ - title: Science
+   url: /pages/science
+ - title: Photography
+   url: /pages/photography
+ - title: CV
+   url: /pages/cv
+ - title: About
+   url: /pages/about
+ - title: Contact
+   url: /pages/contact
 
-# Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
-title:		         "Jan Knappe"
-description:	     "A blog on science, coding, and globetrotting"
-author:              "Jan Knappe"
+social:
+   github: jknappe
+   twitter: janknappe
+   email: jan.knappe@gmail.com
 
-# RSS 2.0 can be used instead of Atom by uncommenting following two lines
-#feed:
-#  path: rss-feed.xml
+google_analytics: "UA-111480581-1"
