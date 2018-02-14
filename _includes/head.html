@@ -73,5 +73,7 @@
     <!-- Modernizr -->
     <script src="{{ "/assets/js/modernizr.custom.15390.js" | prepend: site.baseurl }}" type="text/javascript"></script>
 
-    {% if site.google_analytics %} {% include google_analytics.html %} {% endif %}
+    {% if site.google_analytics and jekyll.environment == 'production' %}
+      {% include analytics.html %}
+    {% endif %}
 </head>
