@@ -12,7 +12,7 @@ excerpt_separator: <!--more-->
 
 <!--more-->
 
-*This article was first published in the MOOC on ["Achieving Sustainable Development"](https://www.futurelearn.com/courses/achieving-sustainable-development) delivered by [Trinity College Dublin](www.tcd.ie) and the [Trinity International Development Initiative](https://www.tcd.ie/tidi/), hosted in [FutureLearn](https://www.futurelearn.com/).*
+*This article was first published in the MOOC on ["Achieving Sustainable Development"](https://www.futurelearn.com/courses/achieving-sustainable-development) delivered by [Trinity College Dublin](www.tcd.ie) and the [Trinity International Development Initiative](https://www.tcd.ie/tidi/), hosted in [FutureLearn](https://www.futurelearn.com/). Find out more about the MOOC in [this blog post]({{site.url}}{% post_url 2018-03-25-Trinity-MOOC-on-Achieving-Sustainable-Develoment %}).*
 
 ### What are peri-urban areas?
 
