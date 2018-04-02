@@ -1,0 +1,82 @@
+/*
+  Reset some basic elements
+*/
+
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+  Basic styling
+*/
+
+body {
+  font-family: $base-font-family;
+}
+body img {
+    align: middle;
+    margin: 5px auto auto auto;
+    display: block;
+    max-width: 600px;
+}
+p {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  line-height: 1.65;
+  font-family: $body-font-family;
+}
+
+/*
+  Links
+*/
+
+a {
+  color: $brand-color;
+  text-decoration: none;
+}
+
+/*
+  Blockquote
+*/
+
+blockquote {
+  border-left: 0.25rem solid #ccc;
+  margin: 1.5em 10px;
+  color: #999;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+
+/**
+ * Tables
+ */
+ table {
+     border-collapse: collapse;
+     margin-bottom: 30px;
+     width: 100%;
+ }
+
+ table, th, td {
+     border: 1px solid black;
+ }
+ th, td {
+     padding: 15px;
+     text-align: left;
+ }

@@ -46,7 +46,7 @@ Jump directly to
 
 ------------------ | ---
 <nobr>2017</nobr>  | **S2Small IWA Conference**, Nantes, France <br> **Knappe J**, Somlai-Haase C, Fowler A, Gill L. *Influence of pre-treatment on the attenuation performance of soil receiving on-site effluent* (talk) <br> Somlai-Haase C, **Knappe J**, Gill L. *Greenhouse gas emissions from soil treatment units of on-site domestic wastewater treatment systems in Ireland* (talk)
-<nobr>2016</nobr>  | **EGU General Assembly**, Vienna, Austria <br> Somlai-Haase C, **Knappe J**, Gill L. *GGreenhouse gas emissions from on-site wastewater treatment systems* (poster)
+<nobr>2016</nobr>  | **EGU General Assembly**, Vienna, Austria <br> Somlai-Haase C, **Knappe J**, Gill L. *GGeenhouse gas emissions from on-site wastewater treatment systems* (poster)
 <nobr>2013</nobr>  | **3rd IWA Development Congress, Catalysing Urban Water**, Nairobi, Kenya <br> Sinha S, Sandmann A, **Knappe J**, Bremer S. *Capacity Building: Making Decentralised Sanitation Central to Thinking and Practice* (talk and paper) <br> Pietruschka B, Reynaud N, Pillay S, Kayser G, Mary E, **Knappe J**, Pradeep R, Jyothi VS, Buckley C. *Application of Bio-Methane Potential Test to determine DEWATS-ABR treatment efficiency in relation to COD removal rate* (talk and paper)
                    | **Annual Conference of the VAAM**, Bremen, Germany <br> Kamp A, Stief P, **Knappe J**, De Beer D.  *Diatoms – widespread  dissimilatory nitrate reducers with overlooked impact on the marine nitrogen cycle* (poster)
 <nobr>2010</nobr>  | **DPG Spring Meeting**, Regensburg, Germany <br> Knappe J, Hanke S, Soros S, Schmidt CF, Fischle W, Schaap IAT. *Towards sub-second imaging of DNA compaction by AFM* (poster)
