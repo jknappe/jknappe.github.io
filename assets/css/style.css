@@ -230,5 +230,11 @@ dd{margin:0 0 1.5rem}
 
 img.with-text { float: left; max-width: 30%; height: auto; } .clearfix:after { content: " "; visibility: hidden; display: block; height: 0; clear: both; }
 
+.center-image
+{
+  margin: 0 auto;
+  display: block;
+}
+
 Read more: https://html.com/attributes/img-height/#ixzz56u7NMtIk
 

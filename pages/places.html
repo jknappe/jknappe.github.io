@@ -1,13 +1,15 @@
 ---
 layout: default
-title: Photography
+title: Places
 ---
 
 <div class="home" id="home">
   
-  <h2 class="pageTitle">Photography</h2>
+  <h2 class="pageTitle">Places</h2>
+  I love to be out and about and this is the place for a loose collection of the most fascinating places I encountered.
+  
   <ul class="posts noList">
-    {% for post in site.categories.photography %}
+    {% for post in site.categories.places %}
       <li>
         <span class="date">{{ post.date | date: '%B %d, %Y' }} | {{ post.content | number_of_words | divided_by:150 }} Minute Read</span>
         <h3><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>

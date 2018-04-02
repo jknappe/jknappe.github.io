@@ -1,7 +1,7 @@
 title: Jan Knappe
-description: a personal blog on science, coding, and globetrotting
+description: a personal blog on science, coding, and photography
 
-url: http://janknappe.com
+url: http://www.janknappe.com
 baseurl: ""
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
@@ -18,14 +18,12 @@ navigation:
    url: /pages/coding
  - title: Science
    url: /pages/science
- - title: Photography
-   url: /pages/photography
+ - title: Places
+   url: /pages/places
  - title: CV
    url: /pages/cv
  - title: About
    url: /pages/about
- - title: Contact
-   url: /pages/contact
 
 social:
    github: jknappe

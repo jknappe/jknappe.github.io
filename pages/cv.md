@@ -37,9 +37,9 @@ Jump directly to
 #### Publications
 
 ------------------ | ---
-<nobr>2017</nobr>  | Somlai-Haase C, **Knappe, J**, Gill L. *Carbon dioxide emissions from a septic tank soakaway in a northern maritime climate*. Science of The Total Environment 586, 485-491. [doi](https://doi.org/10.1016/j.scitotenv.2017.01.206) 10.1016/j.scitotenv.2017.01.206 [[pre-print]]({{ site.url }}/assests/downloads/Somlai-Haase_2017_CarbonDioxideEmissionsFromASepticTankSoakaway.pdf)
-<nobr>2014</nobr>  | Sandmann A, **Knappe, J**, Bremer S, Sinha S. *Transition through Capacity B
-<nobr>2013</nobr>  | Kamp A, Stief P, **Knappe, J**, de Beer D. *Response of the Ubiquitous Pelagic Diatom Thalassiosira weissflogii to Darkness and Anoxia*. PlosONE 8 (12), e82605. [doi](https://doi.org/10.1371/journal.pone.0082605) 10.1371/journal.pone.0082605 [[paper]]({{ site.url }}/assests/downloads/Kamp_2013_ResponseOfTWeissflogiiToDarknessAndAnoxia.pdf)
+<nobr>2017</nobr>  | Somlai-Haase C, **Knappe, J**, Gill L. *Carbon dioxide emissions from a septic tank soakaway in a northern maritime climate*. Science of The Total Environment 586, 485-491. [doi](https://doi.org/10.1016/j.scitotenv.2017.01.206) 10.1016/j.scitotenv.2017.01.206 [[pre-print]]({{ site.url }}/assets/downloads/Somlai-Haase_2017_CarbonDioxideEmissionsFromASepticTankSoakaway.pdf)
+<nobr>2014</nobr>  | Sandmann A, **Knappe, J**, Bremer S, Sinha S. *Transition through Capacity Building*. Sustainable Sanitation Practice 20, 10-15. [[paper]]({{ site.url }}/assets/downloads/Sandmann_2015_TransitionThroughCapacityBuilding.pdf)
+<nobr>2013</nobr>  | Kamp A, Stief P, **Knappe, J**, de Beer D. *Response of the Ubiquitous Pelagic Diatom Thalassiosira weissflogii to Darkness and Anoxia*. PlosONE 8 (12), e82605. [doi](https://doi.org/10.1371/journal.pone.0082605) 10.1371/journal.pone.0082605 [[paper]]({{ site.url }}/assets/downloads/Kamp_2013_ResponseOfTWeissflogiiToDarknessAndAnoxia.pdf)
 
 
 #### Conferences
