@@ -16,7 +16,7 @@ title: Expense Tracker
   <hr>  
     <input type="number" name="value" min="0" step="0.01" placeholder="Value in EUR" required> 
   <br>
-    <select name="category" required>
+    <select name="category" placeholder="Category" required>
       <option value="Food">Food</option>
       <option value="Purchases">Purchases</option>
       <option value="Transportation">Transportation</option>
