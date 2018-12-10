@@ -16,7 +16,7 @@ title: Expense Tracker
 		<option value="Chrome">
 		<option value="Opera">
 		<option value="Safari">
-	  </datalist>
+	  </datalist> 
   <br>
   Paid by: 
     <input type="radio" name="paid_by" value="Jan" checked> Jan
