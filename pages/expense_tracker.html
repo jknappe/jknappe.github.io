@@ -110,11 +110,6 @@ html {
   font-family: "Dax", sans-serif;
   font-weight: 400;
 }
-.middle p span:after {
-  content: '\f0e7';
-  font-family: FontAwesome;
-  color: yellow;
-}
 </style>
   
 </head>
@@ -124,21 +119,16 @@ html {
 
 
 
-<FORM id="myForm" action="https://script.google.com/macros/s/AKfycbxpE4LM1f_-t8h1Zd-WWl4UXNCLirSi55lWxlcWeACqlCvGLBak/exec">
-  Type: 
-    <input type="radio" name="type" value="Expense" checked> Expense
-    <input type="radio" name="type" value="Income"> Income
-  <br>
-  
+<FORM id="myForm" action="https://script.google.com/macros/s/AKfycbxpE4LM1f_-t8h1Zd-WWl4UXNCLirSi55lWxlcWeACqlCvGLBak/exec">  
   <div class="middle">
     <label>
-    <input type="radio" name="radio" checked/>
+    <input type="radio" name="type" value="Expense" checked>
       <div class="front-end box">
         <span>Expense</span>
       </div>
     </label>
     <label>
-    <input type="radio" name="radio"/>
+    <input type="radio" name="type" value="Income">
       <div class="back-end box">
         <span>Income</span>
       </div>
