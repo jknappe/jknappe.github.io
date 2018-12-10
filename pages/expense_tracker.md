@@ -9,13 +9,13 @@ title: Expense Tracker
 
 <script type="text/javascript">
   var subcategory = {
-    Food: ["Nokia","Redmi","Samsung"],
-	Purchases: ["Nokia","Redmi","Samsung"],
-	Transportation: ["Nokia","Redmi","Samsung"],
-	Entertainment: ["Nokia","Redmi","Samsung"],
-	Travel: ["Nokia","Redmi","Samsung"],
-	Fixed Payments: ["Nokia","Redmi","Samsung"],
-	Others: ["Shirt","Pant","T-shirt"]
+    Food: ["Groceries","Eating Out","Alcohol"],
+	Purchases: ["Books","Clothes","Grooming","Electronica","Software","Household","Hobby","Office","Gifts","Other"],
+	Transportation: ["Local Transport","Flights","Distance Transport","Bicycle", "Car", "Taxi"],
+	Entertainment: ["Cinema","Theatre","Concert","Museum","Others"],
+	Travel: ["Accommodation","Flights","Souvenirs","Other"],
+	Fixed: ["Mobile Phone","Rent","Utilities", "Subscriptions", "Insurance"],
+	Others: ["Charity","Lending","Mediacl","Incidental Expenses", "Other"]
     }
   function makeSubmenu(value) {
     if(value.length==0) document.getElementById("categorySelect").innerHTML = "<option></option>";
@@ -57,7 +57,7 @@ title: Expense Tracker
 	  <option>Transportation</option>
 	  <option>Entertainment</option>
 	  <option>Travel</option>
-	  <option>Fixed Payments</option>
+	  <option>Fixed</option>
 	  <option>Others</option>
     </select>
     <select id="categorySelect" size="1" >
