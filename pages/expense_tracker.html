@@ -1,10 +1,8 @@
----
-layout: standalone
-title: Expense Tracker
-# 
----
+<head>
+  <title>Expense Tracker</title>
+</head>
 
-
+<body>
 	
 
 <script type="text/javascript">
@@ -50,6 +48,7 @@ title: Expense Tracker
   <hr>  
     <input type="number" name="value" min="0" step="0.01" placeholder="Value in EUR" required> 
   <br>
+  <div class="custom-select" style="width:200px;">
     <select id="category" name="category" size="1" onchange="makeSubmenu(this.value)">
 	  <option value="" disabled selected>Choose Category</option>
 	  <option>Food</option>
@@ -60,6 +59,7 @@ title: Expense Tracker
 	  <option>Fixed</option>
 	  <option>Others</option>
     </select>
+  </div>
 	<br>
     <select id="categorySelect" name="subcategory" size="1" >
       <option value="" disabled selected>Choose Subcategory</option>
@@ -103,5 +103,7 @@ $(document).ready(function(){
 </script>
 
 
+</body>
 
+</html>
 
