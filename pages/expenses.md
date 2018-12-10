@@ -31,8 +31,11 @@ title: Expense Tracker
 	   <input type="date" name="date">
 	</td> </tr>	
   </table>
-  <input type="submit" id="expenses" value="Submit Expenses">
+  <input type="submit" id="mySubmit" value="Submit Expenses">  
+  <input type="reset">
 </form>
+
+<span id="myConf"></span></p>
 
 
 <FORM>
@@ -44,7 +47,7 @@ title: Expense Tracker
 <script type="text/javascript">
 $(document).ready(function(){
     // References:
-    var $form = $('#myForm');
+    var $form = $('#expenses');
     var $conf = $('#myConf');
     var $subm = $('#mySubmit');	
     var $impt = $form.find(':input').not(':button, :submit, :reset, :hidden');
