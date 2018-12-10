@@ -31,7 +31,6 @@ title: Expense Tracker
         <option>Others</option>
       </datalist>
   <br>
-  <hr>
     <input type="date" name="date">
   <br>
   <hr>
@@ -41,13 +40,8 @@ title: Expense Tracker
   <hr>
 </FORM>
 
-<p><span id="myConf">This is where the confirmation message will appear after submission.</span></p>
+<p><span id="myConf"></span></p>
 
-
-  <hr>
-<FORM>
-<INPUT TYPE="button" onClick="history.go(0)" VALUE="Refresh">
-</FORM>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
