@@ -36,7 +36,8 @@ title: Expense Tracker
   <br>
   <hr>
   <input type="submit" id="mySubmit" value="Submit Expenses">  
-  <input type="reset">
+  <input type="reset" value="Clear form">
+  <INPUT TYPE="button" onClick="history.go(0)" VALUE="Add new expense">
   <hr>
 </FORM>
 
