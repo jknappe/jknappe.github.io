@@ -6,12 +6,12 @@ title: Expense Tracker
 
 <form id="expenses" action="https://script.google.com/macros/s/AKfycbydrwmhU3oWKqieyXqedAsAz8825CKjaFh9PboC0Jx0IchSk8Y/exec">
   <table>
-    <tr> <th>
-       Value: </th> <th>
-	   <input type="number" name="value" min="0" style="width:200px" required>
-	</th> </tr>	
-    <tr> <th>
-       Category: </th> <th>
+    <tr> <td>
+       Value: </td> <td>
+	   <input type="number" name="value" min="0" step="0.01" style="width:200px" required>
+	</td> </tr>	
+    <tr> <td>
+       Category: </td> <td>
 	    <input list="category" name="category">
 		  <datalist id="category">
             <option value="Internet Explorer">
@@ -20,12 +20,16 @@ title: Expense Tracker
 			<option value="Opera">
 			<option value="Safari">
 		  </datalist>
-	</th> </tr>
-    <tr> <th>
-       Paid by: </th> <th>
+	</td> </tr>
+    <tr> <td>
+       Paid by: </td> <td>
 	   <input type="radio" name="paid_by" value="Jan" checked> Jan<br>
        <input type="radio" name="paid_by" value="Celia"> Celia<br>
-	</th> </tr>
+	</td> </tr>
+    <tr> <td>
+       Date: </td> <td>
+	   <input type="date" name="date">
+	</td> </tr>	
   </table>
   <input type="submit" id="expenses" value="Submit Expenses">
 </form>
