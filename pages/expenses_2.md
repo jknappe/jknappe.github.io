@@ -9,6 +9,14 @@ title: Expense Tracker
     <input type="number" name="value" min="0" step="0.01" style="width:200px" required> 
   <br>
   Category:
+    <input list="browsers" name="browser">
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
   <br>
   Paid by: 
     <input type="radio" name="paid_by" value="Jan" checked> Jan
@@ -21,7 +29,7 @@ title: Expense Tracker
   <input type="reset">
 </FORM>
 
-<span id="myConf"></span></p>
+<span id="myConf"></span>
 
 
 <FORM>
