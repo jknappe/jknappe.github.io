@@ -49,8 +49,13 @@ title: Expense Tracker
   <br>
     <select id="category" size="1" onchange="makeSubmenu(this.value)">
 	  <option value="" disabled selected>Choose Category</option>
-	  <option>Mobile</option>
-	  <option>Clothes</option>
+	  <option>Food</option>
+	  <option>Purchases</option>
+	  <option>Transportation</option>
+	  <option>Entertainment</option>
+	  <option>Travel</option>
+	  <option>Fixed Payments</option>
+	  <option>Others</option>
     </select>
     <select id="subcategory" size="1" >
       <option value="" disabled selected>Choose Subcategory</option>
