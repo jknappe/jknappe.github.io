@@ -42,7 +42,7 @@ title: Expense Tracker
   <hr>  
     <input type="number" name="value" min="0" step="0.01" placeholder="Value in EUR" required> 
   <br>
-    <select name="category" placeholder="Category" required>
+    <select name="category">
       <option value="Food">Food</option>
       <option value="Purchases">Purchases</option>
       <option value="Transportation">Transportation</option>
@@ -51,6 +51,16 @@ title: Expense Tracker
       <option value="Fixed Payments">Fixed Payments</option>
       <option value="Others">Others</option>
     </select>
+  <select id="category" size="1" onchange="makeSubmenu(this.value)">
+	<option value="" disabled selected>Choose Category</option>
+	<option>Mobile</option>
+	<option>Clothes</option>
+  </select>
+  <select id="categorySelect" size="1" >
+	<option value="" disabled selected>Choose Subcategory</option>
+	<option></option>
+  </select>
+ <button onclick="displaySelected()">show selected</button>
   <br>
     <input type="date" name="date">
   <br>
