@@ -9,14 +9,14 @@ title: Expense Tracker
     <input type="number" name="value" min="0" step="0.01" style="width:200px" required> 
   <br>
   Category:
-    <input list="browsers" name="browser">
-  <datalist id="browsers">
-    <option value="Internet Explorer">
-    <option value="Firefox">
-    <option value="Chrome">
-    <option value="Opera">
-    <option value="Safari">
-  </datalist>
+    <input type="text" name="team" id="favorite_team" list="team_list">
+<datalist id="team_list">
+  <option>Detroit Lions</option>
+  <option>Detroit Pistons</option>
+  <option>Detroit Red Wings</option>
+  <option>Detroit Tigers</option>
+  <!-- etc... -->
+</datalist>
   <br>
   Paid by: 
     <input type="radio" name="paid_by" value="Jan" checked> Jan
