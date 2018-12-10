@@ -159,28 +159,38 @@ button,
 
 
 <FORM id="myForm" action="https://script.google.com/macros/s/AKfycbxpE4LM1f_-t8h1Zd-WWl4UXNCLirSi55lWxlcWeACqlCvGLBak/exec">  
+
+  <!-- SELECT EXPENSE/INCOME -->
   <div class="middle">
     <label>
-    <input type="radio" name="type" checked/>
+    <input type="radio" name="type" value="Expense" checked/>
     <div class="box">
       <span>Expense</span>
     </div>
     </label>
 	<label>
-    <input type="radio" name="type"/>
+    <input type="radio" name="type" value="Income"/>
     <div class="box">
       <span>Income</span>
     </div>
     </label>
   </div>
+  <!-- END SELECT EXPENSE/INCOME -->
   
+  <!-- SELECT PAID_BY -->
   Paid by: 
     <input type="radio" name="paid_by" value="Jan" checked> Jan
     <input type="radio" name="paid_by" value="Celia"> Celia
   <br>
-  <hr>  
+  <hr>    
+  <!-- END SELECT PAID_BY -->
+    
+  <!-- ENTER VALUE -->
     <input type="number" name="value" min="0" step="0.01" placeholder="Value in EUR" required> 
   <br>
+  <!-- END ENTER VALUE -->
+  
+  <!-- SELECT CATEGORIES -->
   <div class="custom-select" style="width:200px;">
     <select id="category" name="category" size="1" onchange="makeSubmenu(this.value)">
 	  <option value="" disabled selected>Choose Category</option>
@@ -198,9 +208,14 @@ button,
       <option value="" disabled selected>Choose Subcategory</option>
 	  <option></option>
     </select>
-  <br>
+  <br>  
+  <!-- END SELECT CATEGORIES -->
+  
+  <!-- SELECT DATE -->
     <input type="date" name="date">
-  <br>
+  <br>  
+  <!-- END SELECT DATE -->
+  
   <hr>
   <input type="submit" id="mySubmit" value="Submit">  
   <input type="reset" value="Clear">
