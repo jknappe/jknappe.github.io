@@ -33,6 +33,30 @@
   }
 </script>
 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    // References:
+    var $form = $('#myForm');
+    var $conf = $('#myConf');
+    var $subm = $('#mySubmit');
+    var $impt = $form.find(':input').not(':button, :submit, :reset, :hidden');
+ // Submit function:
+    $form.submit(function(){
+        $.post($(this).attr('action'), $(this).serialize(), function(response){
+      // On success, clear all inputs;
+            $impt.val('').attr('value','').removeAttr('checked').removeAttr('selected');
+   // Write a confirmation message:
+            $conf.html("Submitted!");
+   // Disable the submit button:
+            $subm.prop('disabled', true);
+        },'json');
+        return false;
+    });
+});
+</script>
+
 <style>
 @import url("https://fonts.googleapis.com/css?family=Dax:400,900");
 html {
@@ -155,29 +179,9 @@ html {
 <p><span id="myConf"></span></p>
 
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+er
 
-<script type="text/javascript">
-$(document).ready(function(){
-    // References:
-    var $form = $('#myForm');
-    var $conf = $('#myConf');
-    var $subm = $('#mySubmit');
-    var $impt = $form.find(':input').not(':button, :submit, :reset, :hidden');
- // Submit function:
-    $form.submit(function(){
-        $.post($(this).attr('action'), $(this).serialize(), function(response){
-      // On success, clear all inputs;
-            $impt.val('').attr('value','').removeAttr('checked').removeAttr('selected');
-   // Write a confirmation message:
-            $conf.html("Submitted!");
-   // Disable the submit button:
-            $subm.prop('disabled', true);
-        },'json');
-        return false;
-    });
-});
-</script>
+
 
 
 </body>
