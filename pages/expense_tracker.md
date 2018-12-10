@@ -4,6 +4,32 @@ title: Expense Tracker
 # 
 ---
 
+<script type="text/javascript">  
+	var subcategory = {
+		Mobile: ["Nokia","Redmi","Samsung"],
+		Clothes: ["Shirt","Pant","T-shirt"]
+	}
+	function makeSubmenu(value) {
+		if(value.length==0) document.getElementById("categorySelect").innerHTML = "<option></option>";
+		else {
+			var citiesOptions = "";
+			for(categoryId in subcategory[value]) {
+				citiesOptions+="<option>"+subcategory[value][categoryId]+"</option>";
+			}
+			document.getElementById("categorySelect").innerHTML = citiesOptions;
+		}
+	}
+	function displaySelected() { 
+		var country = document.getElementById("category").value;
+		var city = document.getElementById("categorySelect").value;
+		alert(country+"\n"+city);
+	}
+	function resetSelection() {
+		document.getElementById("category").selectedIndex = 0;
+		document.getElementById("categorySelect").selectedIndex = 0;
+	}
+</script>
+
 <FORM id="myForm" action="https://script.google.com/macros/s/AKfycbxpE4LM1f_-t8h1Zd-WWl4UXNCLirSi55lWxlcWeACqlCvGLBak/exec">
   Type: 
     <input type="radio" name="type" value="Expense" checked> Expense
