@@ -8,7 +8,7 @@ title: Expense Tracker
   <table>
     <tr> <th>
        Value: </th> <th>
-	   <input type="number" name="value", min = 0 style="width:200px" required>
+	   <input type="number" name="value" min="0" style="width:200px" required>
 	</th> </tr>	
     <tr> <th>
        Category: </th> <th>
@@ -26,8 +26,8 @@ title: Expense Tracker
 	   <input type="radio" name="paid_by" value="Jan" checked> Jan<br>
        <input type="radio" name="paid_by" value="Celia"> Celia<br>
 	</th> </tr>
-	</table>
-    <input type="submit" id="expenses" value="Submit Expenses">
+  </table>
+  <input type="submit" id="expenses" value="Submit Expenses">
 </form>
 
 
