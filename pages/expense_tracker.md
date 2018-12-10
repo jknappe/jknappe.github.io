@@ -17,12 +17,10 @@ title: Expense Tracker
     <input type="radio" name="paid_by" value="Jan" checked> Jan
     <input type="radio" name="paid_by" value="Celia"> Celia
   <br>
-  <hr>
-  Value:   
-    <input type="number" name="value" min="0" step="0.01" required> 
+  <hr>  
+    <input type="number" name="value" min="0" step="0.01" placeholder="Value in EUR" required> 
   <br>
-  Category:
-    <input type="text" name="category" list="category_list" required>
+    <input type="text" name="category" list="category_list" placeholder="Category" required>
       <datalist id="category_list">
         <option>Food</option>
         <option>Purchases</option>
