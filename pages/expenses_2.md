@@ -3,7 +3,7 @@ layout: standalone
 title: Expense Tracker
 ---
 
-<FORM id="myForm" action="https://script.google.com/macros/s/AKfycbydrwmhU3oWKqieyXqedAsAz8825CKjaFh9PboC0Jx0IchSk8Y/exec">
+<FORM id="myForm" action="https://script.google.com/macros/s/AKfycbxpE4LM1f_-t8h1Zd-WWl4UXNCLirSi55lWxlcWeACqlCvGLBak/exec">
   Value:   
     <input type="number" name="value" min="0" step="0.01" style="width:200px" required> 
   <br>
