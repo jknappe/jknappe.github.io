@@ -43,73 +43,56 @@ html {
 .middle {
   width: 100%;
   text-align: center;
-  /* Made by */
 }
 .middle h1 {
   font-family: "Dax", sans-serif;
-  color: #fff;
+  color: #cccccc;
 }
 .middle input[type="radio"] {
   display: none;
 }
 .middle input[type="radio"]:checked + .box {
-  background-color: #007e90;
+  background-color: #008577;
 }
 .middle input[type="radio"]:checked + .box span {
   color: white;
-  transform: translateY(70px);
-}
-.middle input[type="radio"]:checked + .box span:before {
-  transform: translateY(0px);
-  opacity: 1;
 }
 .middle .box {
   width: 150px;
-  height: 150px;
-  background-color: #fff;
-  transition: all 250ms ease;
+  height: 50px;
+  background-color: #cccccc;
+  transition: all 150ms ease;
   will-change: transition;
   display: inline-block;
   text-align: center;
   cursor: pointer;
   position: relative;
   font-family: "Dax", sans-serif;
-  font-weight: 900;
+  font-weight: 750;
 }
 .middle .box:active {
   transform: translateY(10px);
 }
 .middle .box span {
   position: absolute;
-  transform: translate(0, 60px);
+  transform: translate(0, 5px);
   left: 0;
   right: 0;
   transition: all 300ms ease;
   font-size: 1.5em;
   user-select: none;
-  color: #007e90;
+  color: #008577;
 }
 .middle .box span:before {
   font-size: 1.2em;
   font-family: FontAwesome;
   display: block;
-  transform: translateY(-80px);
   opacity: 0;
   transition: all 300ms ease-in-out;
   font-weight: normal;
   color: white;
 }
-.middle .front-end span:before {
-  content: '\f53a';
-}
-.middle .back-end span:before {
-  content: '\f146';
-}
-.middle p {
-  color: #fff;
-  font-family: "Dax", sans-serif;
-  font-weight: 400;
-}
+
 </style>
   
 </head>
@@ -122,17 +105,17 @@ html {
 <FORM id="myForm" action="https://script.google.com/macros/s/AKfycbxpE4LM1f_-t8h1Zd-WWl4UXNCLirSi55lWxlcWeACqlCvGLBak/exec">  
   <div class="middle">
     <label>
-    <input type="radio" name="type" value="Expense" checked>
-      <div class="front-end box">
-        <span>Expense</span>
-      </div>
+    <input type="radio" name="radio" checked/>
+    <div class="box">
+      <span>Expense</span>
+    </div>
     </label>
-    <label>
-    <input type="radio" name="type" value="Income">
-      <div class="back-end box">
-        <span>Income</span>
-      </div>
-    </label>  
+	<label>
+    <input type="radio" name="radio"/>
+    <div class="box">
+      <span>Income</span>
+    </div>
+    </label>
   </div>
   
   Paid by: 
