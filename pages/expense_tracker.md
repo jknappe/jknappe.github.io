@@ -60,6 +60,7 @@ title: Expense Tracker
 	  <option>Fixed</option>
 	  <option>Others</option>
     </select>
+	<br>
     <select id="categorySelect" name="subcategory" size="1" >
       <option value="" disabled selected>Choose Subcategory</option>
 	  <option></option>
