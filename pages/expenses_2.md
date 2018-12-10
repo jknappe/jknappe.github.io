@@ -11,10 +11,13 @@ title: Expense Tracker
   Category:
     <input type="text" name="category" list="category_list">
       <datalist id="category_list">
-        <option>Detroit Lions</option>
-        <option>Detroit Pistons</option>
-        <option>Detroit Red Wings</option>
-        <option>Detroit Tigers</option>
+        <option>Food</option>
+        <option>Purchases</option>
+        <option>Transportation</option>
+        <option>Entertainment</option>
+        <option>Travel</option>
+        <option>Fixed Payments</option>		
+        <option>Others</option>
       </datalist>
   <br>
   Paid by: 
