@@ -9,14 +9,13 @@ title: Expense Tracker
     <input type="number" name="value" min="0" step="0.01" style="width:200px" required> 
   <br>
   Category:
-    <input type="text" name="team" id="favorite_team" list="team_list">
-<datalist id="team_list">
-  <option>Detroit Lions</option>
-  <option>Detroit Pistons</option>
-  <option>Detroit Red Wings</option>
-  <option>Detroit Tigers</option>
-  <!-- etc... -->
-</datalist>
+    <input type="text" name="category" list="category_list">
+      <datalist id="category_list">
+        <option>Detroit Lions</option>
+        <option>Detroit Pistons</option>
+        <option>Detroit Red Wings</option>
+        <option>Detroit Tigers</option>
+      </datalist>
   <br>
   Paid by: 
     <input type="radio" name="paid_by" value="Jan" checked> Jan
