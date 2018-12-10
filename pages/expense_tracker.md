@@ -6,6 +6,8 @@ title: Expense Tracker
 
 # Expense Tracker
 
+<hr>
+
 <FORM id="myForm" action="https://script.google.com/macros/s/AKfycbxpE4LM1f_-t8h1Zd-WWl4UXNCLirSi55lWxlcWeACqlCvGLBak/exec">
   Type: 
     <input type="radio" name="type" value="Expense" checked> Expense
@@ -31,16 +33,20 @@ title: Expense Tracker
         <option>Others</option>
       </datalist>
   <br>
+  <hr>
   Date: 
     <input type="date" name="date">
   <br>
+  <hr>
   <input type="submit" id="mySubmit" value="Submit Expenses">  
   <input type="reset">
+  <hr>
 </FORM>
 
 <p><span id="myConf">This is where the confirmation message will appear after submission.</span></p>
 
 
+  <hr>
 <FORM>
 <INPUT TYPE="button" onClick="history.go(0)" VALUE="Refresh">
 </FORM>
