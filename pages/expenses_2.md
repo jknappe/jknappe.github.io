@@ -4,7 +4,7 @@ title: Expense Tracker
 #image: 170712-CharynCanyon.jpg
 ---
 
-<FORM id="expenses" action="https://script.google.com/macros/s/AKfycbydrwmhU3oWKqieyXqedAsAz8825CKjaFh9PboC0Jx0IchSk8Y/exec">
+<FORM id="expenses_form" action="https://script.google.com/macros/s/AKfycbydrwmhU3oWKqieyXqedAsAz8825CKjaFh9PboC0Jx0IchSk8Y/exec">
   Value:   
     <input type="number" name="value" min="0" step="0.01" style="width:200px" required> 
   <br>
@@ -27,11 +27,11 @@ title: Expense Tracker
   Date: 
     <input type="date" name="date">
   <br>
-  <input type="submit" id="expenses" value="Submit Expenses">  
+  <input type="submit" id="submission" value="Submit Expenses">  
   <input type="reset">
 </FORM>
 
-<span id="myConf"></span>
+<span id="message"></span>
 
 
 <FORM>
@@ -43,9 +43,9 @@ title: Expense Tracker
 <script type="text/javascript">
 $(document).ready(function(){
     // References:
-    var $form = $('#expenses');
-    var $conf = $('#myConf');
-    var $subm = $('#mySubmit');	
+    var $form = $('#expenses_form');
+    var $conf = $('#message');
+    var $subm = $('#submission');	
     var $impt = $form.find(':input').not(':button, :submit, :reset, :hidden');
     // Submit function:
     $form.submit(function(){
