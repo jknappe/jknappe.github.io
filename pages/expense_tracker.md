@@ -10,8 +10,14 @@ title: Expense Tracker
   Type: 
     <input type="radio" name="type" value="Expense" checked> Expense
     <input type="radio" name="type" value="Income"> Income
-  <br>Value:   
-    <input type="number" name="value" min="0" step="0.01" style="width:200px" required> 
+  <br>
+  Paid by: 
+    <input type="radio" name="paid_by" value="Jan" checked> Jan
+    <input type="radio" name="paid_by" value="Celia"> Celia
+  <br>
+  <hr>
+  Value:   
+    <input type="number" name="value" min="0" step="0.01" required> 
   <br>
   Category:
     <input type="text" name="category" list="category_list" required>
@@ -24,10 +30,6 @@ title: Expense Tracker
         <option>Fixed Payments</option>		
         <option>Others</option>
       </datalist>
-  <br>
-  Paid by: 
-    <input type="radio" name="paid_by" value="Jan" checked> Jan
-    <input type="radio" name="paid_by" value="Celia"> Celia
   <br>
   Date: 
     <input type="date" name="date">
