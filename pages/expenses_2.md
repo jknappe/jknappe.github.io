@@ -25,7 +25,7 @@ title: Expense Tracker
   Date: 
     <input type="date" name="date">
   <br>
-  <input type="submit" id="mySubmit" value="Submit Expenses">  
+  <input type="submit" id="expenses" value="Submit Expenses">  
   <input type="reset">
 </FORM>
 
