@@ -1,10 +1,16 @@
 ---
 layout: standalone
 title: Expense Tracker
+# http://ordrespontane.blogspot.com/2018/01/html-form-to-google-sheet.html
 ---
 
+# Expense Tracker
+
 <FORM id="myForm" action="https://script.google.com/macros/s/AKfycbxpE4LM1f_-t8h1Zd-WWl4UXNCLirSi55lWxlcWeACqlCvGLBak/exec">
-  Value:   
+  Type: 
+    <input type="radio" name="type" value="Expense" checked> Expense
+    <input type="radio" name="type" value="Income"> Income
+  <br>Value:   
     <input type="number" name="value" min="0" step="0.01" style="width:200px" required> 
   <br>
   Category:
