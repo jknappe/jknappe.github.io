@@ -16,16 +16,15 @@ title: Expense Tracker
   <hr>  
     <input type="number" name="value" min="0" step="0.01" placeholder="Value in EUR" required> 
   <br>
-    <input type="text" name="category" list="category_list" placeholder="Category" required>
-      <datalist id="category_list">
-        <option>Food</option>
-        <option>Purchases</option>
-        <option>Transportation</option>
-        <option>Entertainment</option>
-        <option>Travel</option>
-        <option>Fixed Payments</option>		
-        <option>Others</option>
-      </datalist>
+    <select name="category" required>
+      <option value="Food">Food</option>
+      <option value="Purchases">Purchases</option>
+      <option value="Transportation">Transportation</option>
+      <option value="Entertainment">Entertainment</option>
+      <option value="Travel">Travel</option>
+      <option value="Fixed Payments">Fixed Payments</option>
+      <option value="Others">Others</option>
+    </select>
   <br>
     <input type="date" name="date">
   <br>
