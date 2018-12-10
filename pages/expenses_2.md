@@ -1,7 +1,6 @@
 ---
-layout: default
+layout: standalone
 title: Expense Tracker
-#image: 170712-CharynCanyon.jpg
 ---
 
 <FORM id="expenses_form" action="https://script.google.com/macros/s/AKfycbydrwmhU3oWKqieyXqedAsAz8825CKjaFh9PboC0Jx0IchSk8Y/exec">
@@ -9,7 +8,7 @@ title: Expense Tracker
     <input type="number" name="value" min="0" step="0.01" style="width:200px" required> 
   <br>
   Category:
-    <input type="text" name="category" list="category_list">
+    <input type="text" name="category" list="category_list" required>
       <datalist id="category_list">
         <option>Food</option>
         <option>Purchases</option>
