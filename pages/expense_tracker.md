@@ -32,7 +32,6 @@ title: Expense Tracker
       </datalist>
   <br>
   <hr>
-  Date: 
     <input type="date" name="date">
   <br>
   <hr>
