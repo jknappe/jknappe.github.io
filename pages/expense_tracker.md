@@ -4,10 +4,6 @@ title: Expense Tracker
 # 
 ---
 
-# Expense Tracker
-
-<hr>
-
 <FORM id="myForm" action="https://script.google.com/macros/s/AKfycbxpE4LM1f_-t8h1Zd-WWl4UXNCLirSi55lWxlcWeACqlCvGLBak/exec">
   Type: 
     <input type="radio" name="type" value="Expense" checked> Expense
