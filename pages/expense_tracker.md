@@ -4,35 +4,38 @@ title: Expense Tracker
 # 
 ---
 
-<script type="text/javascript">  
-	var subcategory = {
-		Food: ["Nokia","Redmi","Samsung"],
-		Purchases: ["Nokia","Redmi","Samsung"],
-		Transportation: ["Nokia","Redmi","Samsung"],
-		Entertainment: ["Nokia","Redmi","Samsung"],
-		Travel: ["Nokia","Redmi","Samsung"],
-		Fixed Payments: ["Nokia","Redmi","Samsung"],
-		Others: ["Shirt","Pant","T-shirt"]
-	}
-	function makeSubmenu(value) {
-		if(value.length==0) document.getElementById("categorySelect").innerHTML = "<option></option>";
-		else {
-			var citiesOptions = "";
-			for(categoryId in subcategory[value]) {
-				citiesOptions+="<option>"+subcategory[value][categoryId]+"</option>";
-			}
-			document.getElementById("categorySelect").innerHTML = citiesOptions;
-		}
-	}
-	function displaySelected() { 
-		var country = document.getElementById("category").value;
-		var city = document.getElementById("categorySelect").value;
-		alert(country+"\n"+city);
-	}
-	function resetSelection() {
-		document.getElementById("category").selectedIndex = 0;
-		document.getElementById("categorySelect").selectedIndex = 0;
-	}
+
+	
+
+<script type="text/javascript">
+  var subcategory = {
+    Food: ["Nokia","Redmi","Samsung"],
+	Purchases: ["Nokia","Redmi","Samsung"],
+	Transportation: ["Nokia","Redmi","Samsung"],
+	Entertainment: ["Nokia","Redmi","Samsung"],
+	Travel: ["Nokia","Redmi","Samsung"],
+	Fixed Payments: ["Nokia","Redmi","Samsung"],
+	Others: ["Shirt","Pant","T-shirt"]
+    }
+  function makeSubmenu(value) {
+    if(value.length==0) document.getElementById("categorySelect").innerHTML = "<option></option>";
+    else {
+      var citiesOptions = "";
+      for(categoryId in subcategory[value]) {
+        citiesOptions+="<option>"+subcategory[value][categoryId]+"</option>";
+      }
+    document.getElementById("categorySelect").innerHTML = citiesOptions;
+    }
+  }
+  function displaySelected() { 
+    var country = document.getElementById("category").value;
+    var city = document.getElementById("categorySelect").value;
+    alert(country+"\n"+city);
+  }
+  function resetSelection() {
+    document.getElementById("category").selectedIndex = 0;
+    document.getElementById("categorySelect").selectedIndex = 0;
+  }
 </script>
 
 <FORM id="myForm" action="https://script.google.com/macros/s/AKfycbxpE4LM1f_-t8h1Zd-WWl4UXNCLirSi55lWxlcWeACqlCvGLBak/exec">
@@ -57,7 +60,7 @@ title: Expense Tracker
 	  <option>Fixed Payments</option>
 	  <option>Others</option>
     </select>
-    <select id="subcategory" size="1" >
+    <select id="categorySelect" size="1" >
       <option value="" disabled selected>Choose Subcategory</option>
 	  <option></option>
     </select>
