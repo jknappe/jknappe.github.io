@@ -6,8 +6,13 @@ title: Expense Tracker
 
 <script type="text/javascript">  
 	var subcategory = {
-		Mobile: ["Nokia","Redmi","Samsung"],
-		Clothes: ["Shirt","Pant","T-shirt"]
+		Food: ["Nokia","Redmi","Samsung"],
+		Purchases: ["Nokia","Redmi","Samsung"],
+		Transportation: ["Nokia","Redmi","Samsung"],
+		Entertainment: ["Nokia","Redmi","Samsung"],
+		Travel: ["Nokia","Redmi","Samsung"],
+		Fixed Payments: ["Nokia","Redmi","Samsung"],
+		Others: ["Shirt","Pant","T-shirt"]
 	}
 	function makeSubmenu(value) {
 		if(value.length==0) document.getElementById("categorySelect").innerHTML = "<option></option>";
@@ -42,25 +47,15 @@ title: Expense Tracker
   <hr>  
     <input type="number" name="value" min="0" step="0.01" placeholder="Value in EUR" required> 
   <br>
-    <select name="category">
-      <option value="Food">Food</option>
-      <option value="Purchases">Purchases</option>
-      <option value="Transportation">Transportation</option>
-      <option value="Entertainment">Entertainment</option>
-      <option value="Travel">Travel</option>
-      <option value="Fixed Payments">Fixed Payments</option>
-      <option value="Others">Others</option>
+    <select id="category" size="1" onchange="makeSubmenu(this.value)">
+	  <option value="" disabled selected>Choose Category</option>
+	  <option>Mobile</option>
+	  <option>Clothes</option>
     </select>
-  <select id="category" size="1" onchange="makeSubmenu(this.value)">
-	<option value="" disabled selected>Choose Category</option>
-	<option>Mobile</option>
-	<option>Clothes</option>
-  </select>
-  <select id="categorySelect" size="1" >
-	<option value="" disabled selected>Choose Subcategory</option>
-	<option></option>
-  </select>
- <button onclick="displaySelected()">show selected</button>
+    <select id="subcategory" size="1" >
+      <option value="" disabled selected>Choose Subcategory</option>
+	  <option></option>
+    </select>
   <br>
     <input type="date" name="date">
   <br>
