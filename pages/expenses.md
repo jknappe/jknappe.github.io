@@ -26,6 +26,7 @@ title: Expense Tracker
 	   <input type="radio" name="paid_by" value="Jan" checked> Jan<br>
        <input type="radio" name="paid_by" value="Celia"> Celia<br>
 	</th> </tr>
+	</table>
     <input type="submit" id="expenses" value="Submit Expenses">
 </form>
 
