@@ -32,6 +32,93 @@
     document.getElementById("categorySelect").selectedIndex = 0;
   }
 </script>
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Dax:400,900');
+$font: 'Dax',
+sans-serif;
+$white: #fff;
+$green: #007e90;
+html {
+  background-color: #1a1a1a;
+  overflow: hidden;
+}
+
+.middle {
+  width: 100%;
+  text-align: center;
+  h1 {
+    font-family: $font;
+    color: $white;
+  }
+  input[type="radio"] {
+    display: none;
+    &:checked {
+      + .box {
+        background-color: $green;
+        span {
+          color: white;
+          transform: translateY(70px);
+          &:before {
+            transform: translateY(0px);
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+  .box {
+    width: 200px;
+    height: 200px;
+    background-color: $white;
+    transition: all 250ms ease;
+    will-change: transition;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    font-family: $font;
+    font-weight: 900;
+    &:active{
+      transform: translateY(10px);
+    }
+    span {
+      position: absolute;
+      transform: translate(0, 60px);
+      left: 0;
+      right: 0;
+      transition: all 300ms ease;
+      font-size: 1.5em;
+      user-select: none;
+      color: $green;
+      &:before {
+        font-size: 1.2em;
+        font-family: FontAwesome;
+        display: block;
+        transform: translateY(-80px);
+        opacity: 0;
+        transition: all 300ms ease-in-out;
+        font-weight: normal;
+        color: white;
+      }
+    }
+  }
+  .front-end {
+    span {
+      &:before {
+        content: '\f121';
+      }
+    }
+  }
+  .back-end {
+    span {
+      &:before {
+        content: '\f0f4';
+      }
+    }
+  }
+}
+</style>
   
 </head>
 
@@ -45,6 +132,22 @@
     <input type="radio" name="type" value="Expense" checked> Expense
     <input type="radio" name="type" value="Income"> Income
   <br>
+  
+  <div class="middle">
+    <label>
+    <input type="radio" name="radio" checked/>
+      <div class="front-end box">
+        <span>Expense</span>
+      </div>
+    </label>
+    <label>
+    <input type="radio" name="radio"/>
+      <div class="back-end box">
+        <span>Income</span>
+      </div>
+    </label>  
+  </div>
+  
   Paid by: 
     <input type="radio" name="paid_by" value="Jan" checked> Jan
     <input type="radio" name="paid_by" value="Celia"> Celia
