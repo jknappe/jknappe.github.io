@@ -39,10 +39,8 @@
   function resetSelection() {
     document.getElementById("type").selectedIndex = 0;
     document.getElementById("category").selectedIndex = 0;
-    document.getElementById("subcategory").selectedIndex = 0;
     document.getElementById("typeSelect").selectedIndex = 0;
     document.getElementById("categorySelect").selectedIndex = 0;
-    document.getElementById("subcategorySelect").selectedIndex = 0;
   }
 </script>
 
@@ -276,7 +274,7 @@ $(document).ready(function(){
   
 </head>
 
-<body>
+<body onload="resetSelection()">
 	
 <FORM id="myForm" action="https://script.google.com/macros/s/AKfycbxpE4LM1f_-t8h1Zd-WWl4UXNCLirSi55lWxlcWeACqlCvGLBak/exec">  
 
