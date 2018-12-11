@@ -48,6 +48,11 @@
     document.getElementById("typeSelect").selectedIndex = 0;
     document.getElementById("categorySelect").selectedIndex = 0;
   }
+  
+function start(){
+    makeSubmenu("Expense");
+    resetSelection();
+}
 </script>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -280,7 +285,7 @@ $(document).ready(function(){
   
 </head>
 
-<body onload="resetSelection()">
+<body onload="start()">
 	
 <FORM id="myForm" action="https://script.google.com/macros/s/AKfycbxpE4LM1f_-t8h1Zd-WWl4UXNCLirSi55lWxlcWeACqlCvGLBak/exec">  
 
@@ -344,7 +349,7 @@ $(document).ready(function(){
   <!-- SELECT CATEGORIES -->
   <div class="custom-select">
   <legend>Select type</legend>
-    <select id="typeSelect" name="type" size="1" onload="makeSubmenu(Expense)" onchange="makeSubmenu(this.value)" required>
+    <select id="typeSelect" name="type" size="1" onchange="makeSubmenu(this.value)" required>
 	  <option selected="selected">Expense</option>
 	  <option>Income</option>
     </select>
