@@ -48,9 +48,9 @@ function typeChange(value){
     makeSubmenu(value);
 	
 	var type = value;
-	    if (type == "Expense") value = "Food";
+	    if (type == 1) value = 1;
 		else{
-			value = "Salary"
+			value = 2
 		}
     var catOptions = "";
     for(categoryId in subcategory[value]) {
