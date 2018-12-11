@@ -129,7 +129,7 @@ textarea {
   font-size: 100%; 
   line-height: 1.15; 
   margin: 0;
-  width : 150px;
+  width : 250px;
   -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
      -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
           box-sizing: border-box;
@@ -205,6 +205,9 @@ input[type=number] {
   <!-- END ENTER VALUE -->
   
   <!-- SELECT CATEGORIES -->
+  <br>
+  <legend>Select categories</legend>
+  <br>
   <div class="custom-select" style="width:200px;">
     <select id="category" name="category" size="1" onchange="makeSubmenu(this.value)">
 	  <option value="" disabled selected>Choose Category</option>
@@ -226,6 +229,7 @@ input[type=number] {
   <!-- END SELECT CATEGORIES -->
   
   <!-- SELECT DATE -->
+  <br>
   <legend>Select date (if not today)</legend>
   <input type="date" name="date">
   <br>  
