@@ -45,5 +45,9 @@ function start(){
 
 function typeChange(){
     makeSubmenu(this.value);
-	makeSubsubmenu(makeSubmenu(this.value));
+	var category = "Food";
+      if (this.value == "Income") {
+      category = "Salary";
+    }
+	makeSubsubmenu(category);
 }
