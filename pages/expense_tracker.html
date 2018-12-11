@@ -50,8 +50,8 @@ function start(){
 }
 
 function typeChange(value){
-    makeSubmenu("categorySelect");
-	makeSubsubmenu("subCategorySelect");
+    makeSubmenu(value);
+	makeSubsubmenu(makeSubmenu("value"));
 }
 </script>
 
@@ -207,7 +207,7 @@ $(document).ready(function(){
 
 </center>
 
-v0.11
+v0.12
 
 
 
