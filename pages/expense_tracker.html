@@ -89,6 +89,18 @@ $(document).ready(function(){
 	
 <FORM id="myForm" action="https://script.google.com/macros/s/AKfycbxpE4LM1f_-t8h1Zd-WWl4UXNCLirSi55lWxlcWeACqlCvGLBak/exec">  
 
+<!-- SELECT TYPE -->
+  <div class="custom-select">
+  <legend>Select type</legend>
+    <select id="typeSelect" name="type" size="1" onchange="makeSubmenu(this.value)" required>
+	  <option selected="selected">Expense</option>
+	  <option>Income</option>
+    </select>
+  </div>
+<!-- END SELECT TYPE -->
+
+  <br>		
+
   <!-- SELECT EXPENSE/INCOME
   <div class="middle">
     <label>
@@ -148,14 +160,6 @@ $(document).ready(function(){
   
   <!-- SELECT CATEGORIES -->
   <div class="custom-select">
-  <legend>Select type</legend>
-    <select id="typeSelect" name="type" size="1" onchange="makeSubmenu(this.value)" required>
-	  <option selected="selected">Expense</option>
-	  <option>Income</option>
-    </select>
-
-  <br>	
-	
   <legend>Select categories</legend>
     <select id="categorySelect" name="category" size="1" onchange="makeSubsubmenu(this.value)" required>
       <option value="" disabled selected>Choose category</option>
