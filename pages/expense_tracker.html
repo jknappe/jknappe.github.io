@@ -15,17 +15,12 @@
   function makeSubmenu(value) {
     if(value.length==0) document.getElementById("categorySelect").innerHTML = "<option></option>";
     else {
-      var citiesOptions = "";
+      var catOptions = "";
       for(categoryId in subcategory[value]) {
-        citiesOptions+="<option>"+subcategory[value][categoryId]+"</option>";
+        catOptions+="<option>"+subcategory[value][categoryId]+"</option>";
       }
-    document.getElementById("categorySelect").innerHTML = citiesOptions;
+    document.getElementById("categorySelect").innerHTML = catOptions;
     }
-  }
-  function displaySelected() { 
-    var country = document.getElementById("category").value;
-    var city = document.getElementById("categorySelect").value;
-    alert(country+"\n"+city);
   }
   function resetSelection() {
     document.getElementById("category").selectedIndex = 0;
@@ -80,6 +75,11 @@ div {
 }
 
 .buttonbox { 
+  text-align: center; 
+  display: inline-block;
+}
+
+.custom-select { 
   text-align: center; 
   display: inline-block;
 }
