@@ -83,6 +83,22 @@ div {
   text-align: center; 
 }
 
+.datebox { 
+  text-align: center; 
+  background-color: #cce6e3;
+  color: #000000;
+  border-radius: 0px;
+  border: 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  line-height: 2;
+  white-space: nowrap;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  margin: 0.25rem;
+  cursor: pointer;
+}
+
 .middle {
   width: 100%;
   text-align: center;
@@ -259,21 +275,21 @@ input[type=number] {
   <!-- END SELECT CATEGORIES -->
   
   <!-- SELECT DATE -->
-  <br>
-  <legend>Select date (if not today)</legend>
-  <input type="date" name="date">
-  <br>  
-  <hr>
+  <div class="datebox">
+    <legend>Select date (if not today)</legend>
+    <input type="date" name="date">
+  </div>
   <!-- END SELECT DATE -->
     
   <!-- BUTTONS -->
   <div class="buttonbox">
-  <input type="submit" id="mySubmit" value="Submit"> 
-  <input type="reset" value="Clear">
-  <input TYPE="button" onClick="history.go(0)" VALUE="Add New">
-  <hr>  
+    <input type="submit" id="mySubmit" value="Submit"> 
+    <input type="reset" value="Clear">
+    <input TYPE="button" onClick="history.go(0)" VALUE="Add New">
   </div>
   <!-- END BUTTONS -->
+  
+  <hr>  
   
 </FORM>
 
