@@ -135,6 +135,45 @@ div {
   color: #008577;
 }
 
+.paidbox {
+  width: 100%;
+  text-align: center;
+}
+
+.paidbox input[type="radio"] {
+  display: none;
+}
+
+.paidbox input[type="radio"]:checked + .box {
+  background-color: #008577;
+}
+
+.paidbox input[type="radio"]:checked + .box span {
+  color: white;
+}
+
+.paidbox .box {
+  width: 100px;
+  height: 25px;
+  background-color: #cce6e3;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+
+.paidbox .box span {
+  position: absolute;
+  transform: translate(0, 10px);
+  left: 0;
+  right: 0;
+  font-size: 1.5em;
+  user-select: none;
+  color: #008577;
+}
+
 
 button,
 input,
@@ -254,7 +293,7 @@ select{
   END SELECT PAID_BY -->
   
   <!-- SELECT PAID_BY -->
-  <div class="middle">
+  <div class="paidbox">
     <label>
     <input type="radio" name="paid_by" value="Jan" checked/>
     <div class="box">
