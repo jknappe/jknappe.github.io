@@ -48,6 +48,7 @@ function typeChange(value){
     makeSubmenu(value);
 	
 	var type = value;
+	document.write(type)
 	    if (type == 1) value = 1;
 		else{
 			value = 2
