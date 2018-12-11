@@ -44,10 +44,17 @@ function start(){
 }
 
 function typeChange(value){	
-	var category = "Food";
-      if (document.getElementById("typeSelect").innerHTML == "Income") {
-      category = "Salary";
-      }
+
     makeSubmenu(value);
-	makeSubsubmenu(category);
+	
+	var type = value;
+	    if (type == "Expense") value = "Food";
+		else{
+			value = "Salary"
+		}
+    var catOptions = "";
+    for(categoryId in subcategory[value]) {
+      catOptions+="<option>"+subcategory[value][categoryId]+"</option>";
+    }
+    document.getElementById("subCategorySelect").innerHTML = catOptions;
 }
