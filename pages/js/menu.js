@@ -44,9 +44,9 @@ function start(){
 }
 
 function typeChange(value){	
-	var category = Food;
-      if (document.getElementById("typeSelect") == Income) {
-      category = Salary;
+	var category = "Food";
+      if (document.getElementById("typeSelect").innerHTML == "Income") {
+      category = "Salary";
       }
     makeSubmenu(value);
 	makeSubsubmenu(category);
