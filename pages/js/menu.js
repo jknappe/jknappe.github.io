@@ -43,11 +43,11 @@ function start(){
 	makeSubsubmenu("Food");
 }
 
-function typeChange(value){
-    makeSubmenu(value);
+function typeChange(value){	
 	var category = Food;
       if (document.getElementById("typeSelect") == Income) {
       category = Salary;
-    }
+      }
+    makeSubmenu(value);
 	makeSubsubmenu(category);
 }
