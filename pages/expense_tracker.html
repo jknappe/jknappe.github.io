@@ -337,11 +337,12 @@ $(document).ready(function(){
   
   <!-- SELECT CATEGORIES -->
   <div class="custom-select">
-  <legend>Select categories</legend>
+  <legend>Select type</legend>
     <select id="typeSelect" name="type" size="1" onchange="makeSubmenu(this.value)" required>
 	  <option>Expense</option>
 	  <option>Income</option>
     </select>
+  <legend>Select categories</legend>
     <select id="categorySelect" name="category" size="1" onchange="makeSubsubmenu(this.value)" required>
       <option value="" disabled selected>Choose category</option>
 	  <option></option>
