@@ -104,19 +104,19 @@ div {
   width: 100%;
   text-align: center;
 }
-.middle h1 {
-  font-family: 'Raleway', sans-serif;
-  color: #000000;
-}
+
 .middle input[type="radio"] {
   display: none;
 }
+
 .middle input[type="radio"]:checked + .box {
   background-color: #008577;
 }
+
 .middle input[type="radio"]:checked + .box span {
   color: white;
 }
+
 .middle .box {
   width: 150px;
   height: 50px;
@@ -300,6 +300,7 @@ select{
 	
   <!-- BUTTONS -->
   <div class="buttonbox">
+    <legend>Select date (if not today)</legend>
     <input type="submit" id="mySubmit" value="Submit"> 
     <input TYPE="button" onClick="history.go(0)" VALUE="Clear/Add new">
   </div>
