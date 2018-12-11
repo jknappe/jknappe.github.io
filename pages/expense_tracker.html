@@ -17,23 +17,23 @@
 	Others: ["Charity","Lending","Mediacl","Incidental Expenses", "Other"]
   }
   function makeSubmenu(value) {
-    if(value.length==0) document.getElementById("typeSelect").innerHTML = "<option></option>";
+    if(value.length==0) document.getElementById("categorySelect").innerHTML = "<option></option>";
     else {
       var catOptions = "";
       for(categoryId in category[value]) {
         catOptions+="<option>"+category[value][categoryId]+"</option>";
       }
-    document.getElementById("typeSelect").innerHTML = catOptions;
+    document.getElementById("categorySelect").innerHTML = catOptions;
     }
   }
   function makeSubsubmenu(value) {
-    if(value.length==0) document.getElementById("categorySelect").innerHTML = "<option></option>";
+    if(value.length==0) document.getElementById("subCategorySelect").innerHTML = "<option></option>";
     else {
       var catOptions = "";
       for(categoryId in subcategory[value]) {
         catOptions+="<option>"+subcategory[value][categoryId]+"</option>";
       }
-    document.getElementById("categorySelect").innerHTML = catOptions;
+    document.getElementById("subCategorySelect").innerHTML = catOptions;
     }
   }
   function resetSelection() {
