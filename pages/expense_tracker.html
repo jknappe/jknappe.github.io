@@ -43,17 +43,15 @@
     document.getElementById("subCategorySelect").innerHTML = catOptions;
     }
   }
-  function resetSelection() {
-    document.getElementById("type").selectedIndex = 0;
-    document.getElementById("category").selectedIndex = 0;
-    document.getElementById("typeSelect").selectedIndex = 0;
-    document.getElementById("categorySelect").selectedIndex = 0;
-  }
   
 function start(){
     makeSubmenu("Expense");
 	makeSubsubmenu("Food");
-    resetSelection();
+}
+
+function typeChange(value){
+    makeSubmenu("categorySelect");
+	makeSubsubmenu("subCategorySelect");
 }
 </script>
 
@@ -92,7 +90,7 @@ $(document).ready(function(){
 <!-- SELECT TYPE -->
   <div class="custom-select">
   <legend>Select type</legend>
-    <select id="typeSelect" name="type" size="1" onchange="makeSubmenu(this.value)" required>
+    <select id="typeSelect" name="type" size="1" onchange="typeChange(this.value)" required>
 	  <option selected="selected">Expense</option>
 	  <option>Income</option>
     </select>
@@ -130,7 +128,7 @@ $(document).ready(function(){
   
   <!-- SELECT PAID_BY -->
   <div class="paidbox">
-  <legend>Paid by</legend>
+  <legend>Paid/received by</legend>
     <label>
     <input type="radio" name="paid_by" value="Jan" checked/>
     <div class="box">
@@ -209,7 +207,7 @@ $(document).ready(function(){
 
 </center>
 
-v0.10
+v0.11
 
 
 
