@@ -53,6 +53,7 @@ function typeChange(value){
 		else{
 			value = 2
 		}
+	console.log(type);
     var catOptions = "";
     for(categoryId in subcategory[value]) {
       catOptions+="<option>"+subcategory[value][categoryId]+"</option>";
