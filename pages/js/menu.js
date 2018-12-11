@@ -44,11 +44,12 @@ function start(){
 }
 
 function typeChange(value){	
+    console.log(11);
 
     makeSubmenu(value);
 	
 	var type = value;
-	window.alert(value);
+	console.log(value);
 	    if (type == 1) value = 1;
 		else{
 			value = 2
