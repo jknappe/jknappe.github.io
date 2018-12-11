@@ -3,6 +3,10 @@
 <title>Expense Tracker</title>
   
 <script type="text/javascript">
+  var category = {
+  Expense: ["Groceries","Eating Out","Alcohol"],
+  Income: ["Food", "Purchases", "Transportation", "Entertainment", "Travel", "Fixed", "Others"]
+  }
   var subcategory = {
     Food: ["Groceries","Eating Out","Alcohol"],
 	Purchases: ["Books","Clothes","Grooming","Electronica","Software","Household","Hobby","Office","Gifts","Other"],
@@ -11,8 +15,18 @@
 	Travel: ["Accommodation","Flights","Souvenirs","Other"],
 	Fixed: ["Mobile Phone","Rent","Utilities", "Subscriptions", "Insurance"],
 	Others: ["Charity","Lending","Mediacl","Incidental Expenses", "Other"]
-    }
+  }
   function makeSubmenu(value) {
+    if(value.length==0) document.getElementById("typeSelect").innerHTML = "<option></option>";
+    else {
+      var catOptions = "";
+      for(categoryId in category[value]) {
+        catOptions+="<option>"+category[value][categoryId]+"</option>";
+      }
+    document.getElementById("typeSelect").innerHTML = catOptions;
+    }
+  }
+  function makeSubsubmenu(value) {
     if(value.length==0) document.getElementById("categorySelect").innerHTML = "<option></option>";
     else {
       var catOptions = "";
@@ -23,8 +37,12 @@
     }
   }
   function resetSelection() {
+    document.getElementById("type").selectedIndex = 0;
     document.getElementById("category").selectedIndex = 0;
+    document.getElementById("subcategory").selectedIndex = 0;
+    document.getElementById("typeSelect").selectedIndex = 0;
     document.getElementById("categorySelect").selectedIndex = 0;
+    document.getElementById("subcategorySelect").selectedIndex = 0;
   }
 </script>
 
@@ -53,218 +71,213 @@ $(document).ready(function(){
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css?family=Raleway");
-html {
-  background-color: #ffffff;
-  overflow: hidden;
-}
+	@import url("https://fonts.googleapis.com/css?family=Raleway");
+	html {
+	  background-color: #ffffff;
+	  overflow: hidden;
+	}
 
-body {
-  font-family: 'Raleway', sans-serif;
-}
+	body {
+	  font-family: 'Raleway', sans-serif;
+	}
 
-legend{
-  width: 100%;
-  text-align: center;
-  font-size: 0.8em; 
-}
+	legend{
+	  width: 100%;
+	  text-align: center;
+	  font-size: 0.8em; 
+	}
 
-div {
-  width: 100%;
-  text-align: center;
-}
+	div {
+	  width: 100%;
+	  text-align: center;
+	}
 
-.buttonbox { 
-  text-align: center; 
-  display: inline-block;
-}
+	.buttonbox { 
+	  text-align: center; 
+	  display: inline-block;
+	}
 
-.custom-select { 
-  text-align: center; 
-  display: inline-block;
-}
+	.custom-select { 
+	  text-align: center; 
+	  display: inline-block;
+	}
 
-.datebox { 
-  text-align: center; 
-  display: inline-block;
-}
+	.datebox { 
+	  text-align: center; 
+	  display: inline-block;
+	}
 
-.middle {
-  width: 100%;
-  text-align: center;
-}
+	.middle {
+	  width: 100%;
+	  text-align: center;
+	}
 
-.middle input[type="radio"] {
-  display: none;
-}
+	.middle input[type="radio"] {
+	  display: none;
+	}
 
-.middle input[type="radio"]:checked + .box {
-  background-color: #008577;
-}
+	.middle input[type="radio"]:checked + .box {
+	  background-color: #008577;
+	}
 
-.middle input[type="radio"]:checked + .box span {
-  color: white;
-}
+	.middle input[type="radio"]:checked + .box span {
+	  color: white;
+	}
 
-.middle .box {
-  width: 150px;
-  height: 50px;
-  background-color: #cce6e3;
-  transition: all 150ms ease;
-  will-change: transition;
-  display: inline-block;
-  text-align: center;
-  cursor: pointer;
-  position: relative;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 750;
-}
+	.middle .box {
+	  width: 150px;
+	  height: 50px;
+	  background-color: #cce6e3;
+	  transition: all 150ms ease;
+	  will-change: transition;
+	  display: inline-block;
+	  text-align: center;
+	  cursor: pointer;
+	  position: relative;
+	  font-family: 'Raleway', sans-serif;
+	  font-weight: 750;
+	}
 
-.middle .box:active {
-  transform: translateY(2px);
-}
+	.middle .box:active {
+	  transform: translateY(2px);
+	}
 
-.middle .box span {
-  position: absolute;
-  transform: translate(0, 15px);
-  left: 0;
-  right: 0;
-  transition: all 300ms ease;
-  font-size: 1.5em;
-  user-select: none;
-  color: #008577;
-}
+	.middle .box span {
+	  position: absolute;
+	  transform: translate(0, 15px);
+	  left: 0;
+	  right: 0;
+	  transition: all 300ms ease;
+	  font-size: 1.5em;
+	  user-select: none;
+	  color: #008577;
+	}
 
-.paidbox {
-  width: 100%;
-  text-align: center;
-}
+	.paidbox {
+	  width: 100%;
+	  text-align: center;
+	}
 
-.paidbox input[type="radio"] {
-  display: none;
-}
+	.paidbox input[type="radio"] {
+	  display: none;
+	}
 
-.paidbox input[type="radio"]:checked + .box {
-  background-color: #008577;
-}
+	.paidbox input[type="radio"]:checked + .box {
+	  background-color: #008577;
+	}
 
-.paidbox input[type="radio"]:checked + .box span {
-  color: white;
-}
+	.paidbox input[type="radio"]:checked + .box span {
+	  color: white;
+	}
 
-.paidbox .box {
-  width: 120px;
-  height: 35px;
-  background-color: #cce6e3;
-  display: inline-block;
-  text-align: center;
-  cursor: pointer;
-  position: relative;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 500;
-}
+	.paidbox .box {
+	  width: 120px;
+	  height: 35px;
+	  background-color: #cce6e3;
+	  display: inline-block;
+	  text-align: center;
+	  cursor: pointer;
+	  position: relative;
+	  font-family: 'Raleway', sans-serif;
+	  font-weight: 500;
+	}
 
-.paidbox .box span {
-  position: absolute;
-  transform: translate(0, 10px);
-  left: 0;
-  right: 0;
-  font-size: 1em;
-  user-select: none;
-  color: #008577;
-}
-
-
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit;
-  font-size: 100%; 
-  line-height: 1.15; 
-  margin: 0;
-  width : 250px;
-  -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
-     -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
-          box-sizing: border-box;
-}
-
-.button {
-  background-color: #008577;
-  color: #fff;
-  border-radius: 10px;
-  border: 0;
-  font-family: 'Raleway', sans-serif;
-  font-size: 1rem;
-  line-height: 1.2;
-  white-space: nowrap;
-  text-decoration: none;
-  padding: 0.25rem 0.5rem;
-  margin: 0.25rem;
-  cursor: pointer;
-}
-
-input,
-[type="submit"],
-[type="reset"] {
-  background-color: #008577;
-  color: #fff;
-  border-radius: 10px;
-  border: 0;
-  font-family: 'Raleway', sans-serif;
-  font-size: 1rem;
-  line-height: 2;
-  white-space: nowrap;
-  text-decoration: none;
-  padding: 0.25rem 0.5rem;
-  margin: 0.25rem;
-  cursor: pointer;
-}
-
-input,
-[type="date"],
-[type=number] {
-  text-align: center; 
-  display: inline-block;
-  border: 1px dotted #999;
-  background-color: #cce6e3;
-  color: #000000;
-  font-family: 'Raleway', sans-serif;
-  font-size: 1rem;
-  line-height: 2;
-  white-space: nowrap;
-  text-decoration: none;
-  padding: 0.25rem 0.5rem;
-  margin: 0.25rem;
-  cursor: pointer;
-}
-
-select{
-  text-align: center;
-  border: 1px dotted #999;
-  background-color: #cce6e3;
-  color: #000000;
-  font-family: 'Raleway', sans-serif;
-  font-size: 1rem;
-  line-height: 2;
-  white-space: nowrap;
-  text-decoration: none;
-  padding: 0.25rem 0.5rem;
-  margin: 0.25rem;
-  cursor: pointer;
-}
+	.paidbox .box span {
+	  position: absolute;
+	  transform: translate(0, 10px);
+	  left: 0;
+	  right: 0;
+	  font-size: 1em;
+	  user-select: none;
+	  color: #008577;
+	}
 
 
+	button,
+	input,
+	optgroup,
+	select,
+	textarea {
+	  font-family: inherit;
+	  font-size: 100%; 
+	  line-height: 1.15; 
+	  margin: 0;
+	  width : 250px;
+	  -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+		 -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+			  box-sizing: border-box;
+	}
+
+	.button {
+	  background-color: #008577;
+	  color: #fff;
+	  border-radius: 10px;
+	  border: 0;
+	  font-family: 'Raleway', sans-serif;
+	  font-size: 1rem;
+	  line-height: 1.2;
+	  white-space: nowrap;
+	  text-decoration: none;
+	  padding: 0.25rem 0.5rem;
+	  margin: 0.25rem;
+	  cursor: pointer;
+	}
+
+	input,
+	[type="submit"],
+	[type="reset"] {
+	  background-color: #008577;
+	  color: #fff;
+	  border-radius: 10px;
+	  border: 0;
+	  font-family: 'Raleway', sans-serif;
+	  font-size: 1rem;
+	  line-height: 2;
+	  white-space: nowrap;
+	  text-decoration: none;
+	  padding: 0.25rem 0.5rem;
+	  margin: 0.25rem;
+	  cursor: pointer;
+	}
+
+	input,
+	[type="date"],
+	[type=number] {
+	  text-align: center; 
+	  display: inline-block;
+	  border: 1px dotted #999;
+	  background-color: #cce6e3;
+	  color: #000000;
+	  font-family: 'Raleway', sans-serif;
+	  font-size: 1rem;
+	  line-height: 2;
+	  white-space: nowrap;
+	  text-decoration: none;
+	  padding: 0.25rem 0.5rem;
+	  margin: 0.25rem;
+	  cursor: pointer;
+	}
+
+	select{
+	  text-align: center;
+	  border: 1px dotted #999;
+	  background-color: #cce6e3;
+	  color: #000000;
+	  font-family: 'Raleway', sans-serif;
+	  font-size: 1rem;
+	  line-height: 2;
+	  white-space: nowrap;
+	  text-decoration: none;
+	  padding: 0.25rem 0.5rem;
+	  margin: 0.25rem;
+	  cursor: pointer;
+	}
 </style>
   
 </head>
 
 <body>
 	
-
-
-
 <FORM id="myForm" action="https://script.google.com/macros/s/AKfycbxpE4LM1f_-t8h1Zd-WWl4UXNCLirSi55lWxlcWeACqlCvGLBak/exec">  
 
   <!-- SELECT EXPENSE/INCOME -->
@@ -327,18 +340,17 @@ select{
   <!-- SELECT CATEGORIES -->
   <div class="custom-select">
   <legend>Select categories</legend>
-    <select id="category" name="category" size="1" onchange="makeSubmenu(this.value)" required>
-	  <option value="" disabled selected>Choose Category</option>
-	  <option>Food</option>
-	  <option>Purchases</option>
-	  <option>Transportation</option>
-	  <option>Entertainment</option>
-	  <option>Travel</option>
-	  <option>Fixed</option>
-	  <option>Others</option>
+    <select id="typeSelect" name="type" size="1" onchange="makeSubmenu(this.value)" required>
+	  <option value="" disabled selected>Choose type</option>
+	  <option>Expense</option>
+	  <option>Income</option>
     </select>
-    <select id="categorySelect" name="subcategory" size="1" required>
-      <option value="" disabled selected>Choose Subcategory</option>
+    <select id="categorySelect" name="category" size="1" onchange="makeSubsubmenu(this.value)" required>
+      <option value="" disabled selected>Choose category</option>
+	  <option></option>
+    </select>
+    <select id="subCategorySelect" name="subcategory" size="1" required>
+      <option value="" disabled selected>Choose subcategory</option>
 	  <option></option>
     </select>
   </div>
