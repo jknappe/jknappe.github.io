@@ -43,7 +43,7 @@ function start(){
 	makeSubsubmenu("Food");
 }
 
-function typeChange(value){
-    makeSubmenu(value);
-	makeSubsubmenu(makeSubmenu(value));
+function typeChange(){
+    makeSubmenu(this.value);
+	makeSubsubmenu(makeSubmenu(this.value));
 }
