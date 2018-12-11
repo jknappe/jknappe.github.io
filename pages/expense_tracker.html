@@ -257,15 +257,15 @@ input,
   <!-- END SELECT PAID_BY -->
     
   <!-- ENTER VALUE -->
+  <div class="datebox">
+  <legend>Enter value</legend>
     <input type="number" name="value" min="0" step="0.01" placeholder="Value in EUR" required> 
-  <br>
+  </div>
   <!-- END ENTER VALUE -->
   
   <!-- SELECT CATEGORIES -->
-  <br>
-  <legend>Select categories</legend>
-  <br>
   <div class="custom-select" style="width:200px;">
+  <legend>Select categories</legend>
     <select id="category" name="category" size="1" onchange="makeSubmenu(this.value)">
 	  <option value="" disabled selected>Choose Category</option>
 	  <option>Food</option>
