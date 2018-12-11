@@ -245,12 +245,29 @@ select{
   </div>
   <!-- END SELECT EXPENSE/INCOME -->
   
-  <!-- SELECT PAID_BY -->
+  <!-- SELECT PAID_BY 
   Paid by: 
     <input type="radio" name="paid_by" value="Jan" checked> Jan
     <input type="radio" name="paid_by" value="Celia"> Celia
   <br>
   <hr>    
+  END SELECT PAID_BY -->
+  
+  <!-- SELECT PAID_BY -->
+  <div class="middle">
+    <label>
+    <input type="radio" name="type" value="Expense" checked/>
+    <div class="box">
+      <span>Jan</span>
+    </div>
+    </label>
+	<label>
+    <input type="radio" name="type" value="Income"/>
+    <div class="box">
+      <span>Celia</span>
+    </div>
+    </label>
+  </div>
   <!-- END SELECT PAID_BY -->
     
   <!-- ENTER VALUE -->
@@ -282,7 +299,8 @@ select{
    
   <!-- ADD NOTE -->
   <div class="datebox">
-    <input type="text" name="note" maxlength="50" placeholder="Add note"> 
+  <legend>Add note (optional)</legend>
+    <input type="text" name="note" maxlength="50" placeholder="Add note" > 
   </div>
   <!-- END ADD NOTE -->
   
