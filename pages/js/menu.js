@@ -43,10 +43,10 @@ function start(){
 	makeSubsubmenu("Food");
 }
 
-function typeChange(){
-    makeSubmenu(this.value);
+function typeChange(value){
+    makeSubmenu(value);
 	var category = "Food";
-      if (this.value == "Income") {
+      if (value == "Income") {
       category = "Salary";
     }
 	makeSubsubmenu(category);
