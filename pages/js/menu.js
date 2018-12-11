@@ -46,7 +46,7 @@ function start(){
 function typeChange(value){
     makeSubmenu(value);
 	var category = Food;
-      if (value == Income) {
+      if (document.getElementById("typeSelect") == Income) {
       category = Salary;
     }
 	makeSubsubmenu(category);

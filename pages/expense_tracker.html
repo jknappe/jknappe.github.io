@@ -12,7 +12,7 @@
 <!-- SELECT TYPE -->
   <div class="custom-select">
   <legend>Select type</legend>
-    <select id="typeSelect" name="type" size="1" onchange="makeSubmenu(this.value)" required>
+    <select id="typeSelect" name="type" size="1" onchange="typeChange(this.value)" required>
 	  <option selected="selected">Expense</option>
 	  <option>Income</option>
     </select>
@@ -101,11 +101,7 @@
 
 </center>
 
-v0.20
-
-
-
-
+v0.21
   
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="js/menu.js"></script>
