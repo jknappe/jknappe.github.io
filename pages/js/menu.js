@@ -1,23 +1,25 @@
-  var category = {
+var category = {
   Expense: ["Food", "Purchases", "Transportation", "Entertainment", "Travel", "Fixed", "Others"],
   Income: ["Salary", "Cash", "Gifts", "Investment", "Sales", "Others"]
   }
-  var subcategory = {
-    Food: ["Groceries","Eating Out","Alcohol"],
-	Purchases: ["Books","Clothes","Grooming","Electronica","Software","Household","Hobby","Office","Gifts","Other"],
-	Transportation: ["Local Transport","Flights","Distance Transport","Bicycle", "Car", "Taxi"],
-	Entertainment: ["Cinema","Theatre","Concert","Museum","Others"],
-	Travel: ["Accommodation","Flights","Souvenirs","Other"],
-	Fixed: ["Mobile Phone","Rent","Utilities", "Subscriptions", "Insurance"],
-	Others: ["Charity","Lending","Mediacl","Incidental Expenses", "Other"],
-	Salary: ["Regular", "One-off", "Others"],
-	Cash: ["Found", "Others"],
-	Gifts: ["Birthday", "Christmas", "Others"],
-	Investment: ["Interest", "Others"],
-	Sales: ["Clothes", "Household", "Others"],
-	Others: ["---"]
+  
+var subcategory = {
+  Food: ["Groceries","Eating Out","Alcohol"],
+  Purchases: ["Books","Clothes","Grooming","Electronica","Software","Household","Hobby","Office","Gifts","Other"],
+  Transportation: ["Local Transport","Flights","Distance Transport","Bicycle", "Car", "Taxi"],
+  Entertainment: ["Cinema","Theatre","Concert","Museum","Others"],
+  Travel: ["Accommodation","Flights","Souvenirs","Other"],
+  Fixed: ["Mobile Phone","Rent","Utilities", "Subscriptions", "Insurance"],
+  Others: ["Charity","Lending","Mediacl","Incidental Expenses", "Other"],
+  Salary: ["Regular", "One-off", "Others"],
+  Cash: ["Found", "Others"],
+  Gifts: ["Birthday", "Christmas", "Others"],
+  Investment: ["Interest", "Others"],
+  Sales: ["Clothes", "Household", "Others"],
+  Others: ["---"]
   }
-  function makeSubmenu(value) {
+  
+function makeSubmenu(value) {
     if(value.length==0) document.getElementById("categorySelect").innerHTML = "<option></option>";
     else {
       var catOptions = "";
@@ -27,7 +29,8 @@
     document.getElementById("categorySelect").innerHTML = catOptions;
     }
   }
-  function makeSubsubmenu(value) {
+  
+function makeSubsubmenu(value) {
     if(value.length==0) document.getElementById("subCategorySelect").innerHTML = "<option></option>";
     else {
       var catOptions = "";
