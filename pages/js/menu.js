@@ -53,9 +53,9 @@ console.log(value);
 	
 	var type = value;
 console.log(type);
-	    if (type == "Income") value = 1;
+	    if (type == "Income") value = "Salary";
 		else{
-			value = 2
+			value = "Food"
 		}
 console.log(type);
 console.log(value);
