@@ -47,23 +47,15 @@ function start(){
 }
 
 function typeChange(value) {	
-
-console.log(value);
-    makeSubmenu(value);
-	
+    makeSubmenu(value);	
 	var type = value;
-console.log(type);
 	    if (type == "Income") value = "Salary";
 		else{
 			value = "Food"
 		}
-console.log(type);
-console.log(value);
     var catOptions = "";
-console.log(catOptions);	
     for(categoryId in subcategory[value]) {
       catOptions+="<option>"+subcategory[value][categoryId]+"</option>";
     }
-console.log(catOptions);
     document.getElementById("subCategorySelect").innerHTML = catOptions;
 }
