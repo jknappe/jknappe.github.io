@@ -43,7 +43,7 @@ function start(){
 	makeSubsubmenu("Food");
 }
 
-function typeChange(value){	
+function typeChange(value) {	
 	console.log(value);
     makeSubmenu(value);
 	
@@ -53,7 +53,7 @@ function typeChange(value){
 		else{
 			value = 2
 		}
-	console.log(type);}
+	console.log(type);
 	console.log(value);
     var catOptions = "";
     for(categoryId in subcategory[value]) {
