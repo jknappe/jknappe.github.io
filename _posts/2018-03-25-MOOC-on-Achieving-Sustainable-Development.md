@@ -1,14 +1,12 @@
 ---
 layout: post
 title: "MOOC on Achieving Sustainable Development"
-categories: [science]
-tags: [sanitation, urbanization, urbanisation, SDG, SDG6, sustainable development goals, urban planning, development cooperation, basic needs services, WASH, water, urban, peri-urban, city planning, improved sanitation, sanitation value chain, MOOC, sanitation safety planning, SSP]
-image: 180325-Trinity-MOOC-Sustainable-Development.png
+tags: [MOOC, Sanitation, SDGs, Sustainable Development, WASH]
 comments: true
 excerpt_separator: <!--more-->
 ---
 
-<p class="intro"><span class="dropcap">T</span>rinity's Massive Open Online Course (MOOC) on "Achieving Sustainable Development" is now open for registration. </p>
+Trinity's Massive Open Online Course (MOOC) on "Achieving Sustainable Development" is now open for registration. 
 
 <!--more-->
 

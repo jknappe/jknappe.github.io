@@ -2,7 +2,7 @@
 layout: post
 title: "Using Academicons and Font Awesome in Jekyll"
 categories: [coding]
-tags: [jekyll, academicons, Font Awesome, millenial, github pages, css, scss, social media, windows]
+tags: [Academicons, CSS, Font Awesome, Jekyll]
 image: 171219-academicons.jpg
 comments: true
 excerpt_separator: <!--more-->
