@@ -53,7 +53,7 @@ Automated long-term and survey soil gas flux chambers were deployed between May 
 
 You can download the poster below.
 
-[![{{ site.url }}/publications/conferences/knappe-et-al-2019-sssa-san-antonio-ghg-emissions-from-septic-systems.jpg]({{ site.url }}/publications/conferences/knappe-et-al-2019-sssa-san-antonio-ghg-emissions-from-septic-systems.pdf)
+[![GHG from septic systems poster]({{ site.url }}/publications/conferences/knappe-et-al-2019-sssa-san-antonio-ghg-emissions-from-septic-systems.jpg "GHG from septic systems poster")]({{ site.url }}/publications/conferences/knappe-et-al-2019-sssa-san-antonio-ghg-emissions-from-septic-systems.pdf)
 
 
 
