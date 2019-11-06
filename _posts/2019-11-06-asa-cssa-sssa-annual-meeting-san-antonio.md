@@ -20,9 +20,7 @@ If you happen to be at the conference, come and find me at the following session
 
 #### Tracing Biomat Growth in Soil Treatment Units Using a Network of Automated Soil Sensors
 
-Tuesday, November 12, 2019
-10:40 AM - 10:55 AM
-Henry B. Gonzalez Convention Center - 212A
+Tuesday, November 12, 2019 | 10:40 AM - 10:55 AM | Henry B. Gonzalez Convention Center - 212A
 
 *J. Knappe, C. Somlai, A.C. Fowler, L. Gill*
 
@@ -33,9 +31,7 @@ With microbial processes as the main pathway for pollutant attenuation in STUs, 
 
 #### Nutrient Impacts of Domestic Wa­Stewater Treatment Systems on Surface Water Quality in Poorly Permeable Subsoils
 
-Tuesday, November 12, 2019
-11:40 AM - 11:55 AM
-Henry B. Gonzalez Convention Center - 212A
+Tuesday, November 12, 2019 | 11:40 AM - 11:55 AM | Henry B. Gonzalez Convention Center - 212A
 
 *L. Gill, L. Brophy, D. Dubber, C. Fennell, J. Knappe, B. Misstear*
 
@@ -48,10 +44,7 @@ This research estimated the P and N loading to surface water arising from domest
 
 #### Greenhouse Gas Emissions from Septic Systems
 
-Tuesday, November 12, 2019
-4:00 PM - 6:00 PM
-Henry B. Gonzalez Convention Center - Exhibit Hall 1
-Poster Number: 1253
+Tuesday, November 12, 2019 | 4:00 PM - 6:00 PM | Henry B. Gonzalez Convention Center - Exhibit Hall 1 | Poster Number: 1253
 
 *J. Knappe, C. Somlai, L. Gill*
 
