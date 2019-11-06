@@ -12,6 +12,8 @@ Scientific conferences are always a great way to meet people and learn more abou
 
 The 2019 ASA-CSSA-SSSA International Annual Meeting (November 10 - 13, 2019 ) in San Antonio, Texas, is all about [Embracing The Digital Environment](https://www.acsmeetings.org/) in the fields of [agronomy](https://www.agronomy.org/), [crop science](https://www.crops.org/) and [soil science](https://www.soils.org/). 
 
+![Embracing The Digital Environment]({{ site.url }}/images/blog/sssa-annual-meeting-logo.jpg "Embracing The Digital Environment")
+
 With my current research being focussed on [environmental impacts of small scale wastewater treatment systems](https://www.tcd.ie/civileng/people/research-staff/jan-knappe.php), you can find me mostly at the soil science part of the conference. I will present our groups work on [using three-dimensinal soil sensor networks to monitor biomat development in soil treatment units receiving domestic effluent](https://scisoc.confex.com/scisoc/2019am/meetingapp.cgi/Paper/122209), [monitoring greenhouse gas emissions from on-site wastewater treatment systems](https://scisoc.confex.com/scisoc/2019am/meetingapp.cgi/Paper/122374), and [impacts of nutrients leaching from domestic wastewater treatment installations on surface water quality](https://scisoc.confex.com/scisoc/2019am/meetingapp.cgi/Paper/122198).
 
 If you happen to be at the conference, come and find me at the sessions mentioned below. If you cannot make it, find the presentations and poster for download below.
