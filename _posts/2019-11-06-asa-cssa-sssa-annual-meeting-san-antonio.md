@@ -18,9 +18,9 @@ With my current research being focussed on [environmental impacts of small scale
 
 If you happen to be at the conference, come and find me at the sessions mentioned below. If you cannot make it, find the presentations and poster for download below.
 
-### Session 226: Soil-Based Wastewater Treatment - Impact and Mechanisms (Oral)
+## Session 226: Soil-Based Wastewater Treatment - Impact and Mechanisms (Oral)
 
-#### Tracing Biomat Growth in Soil Treatment Units Using a Network of Automated Soil Sensors
+### Tracing Biomat Growth in Soil Treatment Units Using a Network of Automated Soil Sensors
 
 Tuesday, November 12, 2019 | 10:40 AM - 10:55 AM | Henry B. Gonzalez Convention Center - 212A
 
@@ -33,7 +33,7 @@ In trenches receiving primary effluent, biomat growth was not limited by substra
 
 With microbial processes as the main pathway for pollutant attenuation in STUs, understanding the drivers and long-term effects of biomat growth at the infiltrative surface helps to improve system design and operational procedures. According to this study, design guidelines should consider biomat development as a function of pre-treatment to minimize the risk for groundwater pollution and adverse effects on human health from STUs.
 
-#### Nutrient Impacts of Domestic Wastewater Treatment Systems on Surface Water Quality in Poorly Permeable Subsoils
+### Nutrient Impacts of Domestic Wastewater Treatment Systems on Surface Water Quality in Poorly Permeable Subsoils
 
 Tuesday, November 12, 2019 | 11:40 AM - 11:55 AM | Henry B. Gonzalez Convention Center - 212A
 
@@ -46,9 +46,9 @@ As my co-workers cannot make it this time, I will be presenting our work.
 This research estimated the P and N loading to surface water arising from domestic wastewater treatment systems (DWWTS). Four small catchments, each containing a high density of DWWTS (15 - 32 DWWTS km2) and underlain by either poorly permeable subsoil or shallow, impermeable bedrock, were selected for study. The primary stream in each catchment was monitored upstream and downstream of the main cluster of DWWTS for nutrients (N and P), as well as Total Coliforms, E.coli and Enterococci. In addition, a number of mid-catchment monitoring points were also sampled in order to observe changing water quality patterns throughout each catchment. A catchment P loading schematic, describing DWWTS-P and -N loading under low flow conditions was developed. The P loading arising from DWWTS was found to represent between 1.5% and 9% of the annual P loading from the four study catchments. Likewise, between 10% and 29% of the annual N loading was estimated to arise from catchment DWWTS. In addition to the estimation of annual loading, general water quality in each catchment was characterised with respect to P and N fractions and sub-clusters of DWWTS located in close proximity to the stream, were found to result in ‘hotspots’ of severely impacted surface water. A number of models were examined with the aim of estimating the P contribution of a given DWWTS as a function of its distance from the stream. Across the four catchments studied, a power inverse model was found to provide a good description of DWWTS-P loading with distance, describing a gradual decrease in P loading to the stream with increasing distance. This has potential use in future mitigation strategies relating to the impacts of DWWTS on surface water.
 
 
-### Session 380: Soil-Based Wastewater Treatment - Impact and Mechanisms (Poster)
+## Session 380: Soil-Based Wastewater Treatment - Impact and Mechanisms (Poster)
 
-#### Greenhouse Gas Emissions from Septic Systems
+### Greenhouse Gas Emissions from Septic Systems
 
 Tuesday, November 12, 2019 | 4:00 PM - 6:00 PM | Henry B. Gonzalez Convention Center - Exhibit Hall 1 | Poster Number: 1253
 
