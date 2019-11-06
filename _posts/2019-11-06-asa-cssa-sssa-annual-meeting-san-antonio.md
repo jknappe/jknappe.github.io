@@ -14,7 +14,7 @@ The 2019 ASA-CSSA-SSSA International Annual Meeting (November 10 - 13, 2019 ) in
 
 With my current research being focussed on [environmental impacts of small scale wastewater treatment systems](https://www.tcd.ie/civileng/people/research-staff/jan-knappe.php), you can find me mostly at the soil science part of the conference. I will present our groups work on [using three-dimensinal soil sensor networks to monitor biomat development in soil treatment units receiving domestic effluent](https://scisoc.confex.com/scisoc/2019am/meetingapp.cgi/Paper/122209), [monitoring greenhouse gas emissions from on-site wastewater treatment systems](https://scisoc.confex.com/scisoc/2019am/meetingapp.cgi/Paper/122374), and [impacts of nutrients leaching from domestic wastewater treatment installations on surface water quality](https://scisoc.confex.com/scisoc/2019am/meetingapp.cgi/Paper/122198).
 
-If you happen to be at the conference, come and find me at the following sessions:
+If you happen to be at the conference, come and find me at the sessions mentioned below. If you cannot make it, find the presentations and poster for download below.
 
 ### Session 226: Soil-Based Wastewater Treatment - Impact and Mechanisms (Oral)
 
@@ -50,6 +50,16 @@ Tuesday, November 12, 2019 | 4:00 PM - 6:00 PM | Henry B. Gonzalez Convention Ce
 
 Wastewater treatment processes are a potential source of greenhouse gas (GHG) emissions. While a wide body of research has been dedicated to quantifying emissions from centralized systems, the production of GHGs from on-site wastewater treatment systems (OWTSs) received only limited targeted research to date. Here, we present results from the first study of GHG emissions from two septic tanks and soil treatment units (STUs) receiving both primary and secondary effluent in Ireland.
 Automated long-term and survey soil gas flux chambers were deployed between May 2017 and July 2018 over the STUs for monitoring carbon dioxide (CO2), methane (CH4) and nitrous oxide (N2O) fluxes. Emissions from the septic tanks were measured by placing the survey chamber directly onto the liquid surface and were dominated by discrete, short ebullitive events of methane. Additionally, vent system emissions were quantified on site. Overall, total observed net GHG emissions from the two treatment systems were 17.0 and 22.0 CO2 Eq. kg cap―1 yr―1, respectively, with more than 80% of the emissions in the form of CO2 and less than 3% as N2O (the remaining part being CH4). While the STU (including the vent system) was found to be the main source of CO2 emissions from both systems, the septic tank was the main source of CH4 emissions, reflecting the various oxidation stages in the treatment process. N2O emissions were highest from the vent system. However, when fed with secondary treated effluent, one of the systems expressed a net uptake over the STU, indicating that the interactions between environmental and microbial drivers of GHG fluxes from septic systems are more complex than initially thought.
+
+You can download the poster below.
+
+[![/publications/conferences/knappe-et-al-2019-sssa-san-antonio-ghg-emissions-from-septic-systems.jpg](/publications/conferences/knappe-et-al-2019-sssa-san-antonio-ghg-emissions-from-septic-systems.pdf)
+
+
+
+
+
+
 
 
 
