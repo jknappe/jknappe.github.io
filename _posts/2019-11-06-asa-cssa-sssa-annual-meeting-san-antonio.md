@@ -33,6 +33,11 @@ In trenches receiving primary effluent, biomat growth was not limited by substra
 
 With microbial processes as the main pathway for pollutant attenuation in STUs, understanding the drivers and long-term effects of biomat growth at the infiltrative surface helps to improve system design and operational procedures. According to this study, design guidelines should consider biomat development as a function of pre-treatment to minimize the risk for groundwater pollution and adverse effects on human health from STUs.
 
+You can download the presentation below.
+
+[![biomat presentation]({{ site.url }}/publications/conferences/knappe-et-al-2019-sssa-san-antonio-biomat-growth-soil-treatment-unit.jpg "biomat presentation")]({{ site.url }}/publications/conferences/knappe-et-al-2019-sssa-san-antonio-biomat-growth-soil-treatment-unit.pdf)
+
+
 ### Nutrient Impacts of Domestic Wastewater Treatment Systems on Surface Water Quality in Poorly Permeable Subsoils
 
 Tuesday, November 12, 2019 | 11:40 AM - 11:55 AM | Henry B. Gonzalez Convention Center - 212A
