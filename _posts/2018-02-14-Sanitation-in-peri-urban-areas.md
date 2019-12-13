@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Sanitation in peri-urban areas"
+image:
+  teaser : /images/blog/sanitation-peri-urban-teaser.jpg
 tags: [MOOC, Sanitation, SDGs, Sustainable Development, WASH]
 comments: true
 excerpt_separator: <!--more-->

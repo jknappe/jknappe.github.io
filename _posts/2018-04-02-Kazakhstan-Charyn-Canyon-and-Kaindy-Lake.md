@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Kazakhstan: Charyn Canyon and Kaindy Lake"
+image:
+  teaser : /images/blog/kazakhstan-teaser.jpg
 tags: [Kazakhstan, Travel, Photography]
 comments: true
 excerpt_separator: <!--more-->

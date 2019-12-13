@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "MOOC on Achieving Sustainable Development"
+image:
+  teaser : /images/blog/mooc-teaser.jpg
 tags: [MOOC, Sanitation, SDGs, Sustainable Development, WASH]
 comments: true
 excerpt_separator: <!--more-->

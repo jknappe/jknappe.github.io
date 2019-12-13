@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Temperature changes in Germany visualized in R"
+image:
+  teaser : /images/blog/r-temperature-changes-germany-teaser.jpg
 tags: [R, Climate Change, Data Science, Visualization, tidyverse]
 comments: true
 excerpt_separator: <!--more-->

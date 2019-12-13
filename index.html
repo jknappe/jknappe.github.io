@@ -9,16 +9,15 @@ layout: default
 <div class="posts">
   {% for post in paginator.posts %}
     <article class="post">
-      <h1>
-        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-      </h1>
+      
+        <a href="{{ site.baseurl }}{{ post.url }}">			
+			<h1>{{ post.title }}</h1>			
+		</a>      
 
       <div clsss="meta">
         <span class="date">
           {{ post.date | date: "%Y-%m-%d" }}
         </span>
-		
-		<br>
 
         <ul class="tag">
           {% for tag in post.tags %}
@@ -27,9 +26,19 @@ layout: default
               {{ tag }}
             </a>
           </li>
-          {% endfor %}
-        </ul>
+          {% endfor %} 
+        </ul>		
+		
       </div>
+	  
+	  <div class="teaser"> 
+		<a href="{{ site.baseurl }}{{ post.url }}">
+		  {% if post.image.teaser %}
+			<img src="{{ site.baseurl }}{{ post.image.teaser }}" alt="teaser" itemprop="image">
+		  {% else %}
+		  {% endif %} 
+		</a>
+	  </div>
 
       <div class="entry">
         {{ post.excerpt }}
@@ -38,6 +47,7 @@ layout: default
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
   {% endfor %}
+  
 </div>
 
 <div class="pagination">
