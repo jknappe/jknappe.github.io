@@ -3,7 +3,7 @@ layout: post
 title: "The 2019 ASA-CSSA-SSSA International Annual Meeting"
 image:
   teaser : /images/blog/san-antonio-teaser.jpg
-tags: [Academia, Research, Sanitation, Wastewater, GHG emissions, Conference, Soil Science, Environmental Engineering]
+tags: [Research, Sanitation, Wastewater, GHG emissions, Conference]
 comments: true
 excerpt_separator: <!--more-->
 ---
