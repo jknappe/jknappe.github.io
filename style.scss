@@ -32,6 +32,9 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font;
+  color: $heading-color;
+  font-weight: bold;
   line-height: 1.7;
   margin: 1em 0 15px;
   padding: 0;
@@ -41,15 +44,8 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-h1, h2, h3, h5 {
-  font-weight: bold;
-}
-
 h1 {
   font-size: 30px;
-  a {
-    color: inherit;
-  }
 }
 
 h2 {
@@ -76,10 +72,12 @@ p {
 
 a {
   color: $link-color;
+  border-bottom: 1px dotted $link-color;
+  transition: all 0.25s linear;
   text-decoration: none;
   cursor: pointer;
   &:hover, &:active {
-    color: $link-color;
+	border-bottom: 1px solid $link-color;
   }
 }
 
@@ -352,13 +350,20 @@ img {
 }
 
 .site-name {
+font-family: $heading-font;
+  color: $heading-color;
+  font-weight: bold;
+  line-height: 1.7;
   margin: 0;
-  color: $darkGray;
+  padding: 0;  
   cursor: pointer;
-  font-family: $helveticaNeue;
-  font-weight: 300;
-  font-size: 28px;
+  font-size: 36px;
   letter-spacing: 1px;
+  
+  a {
+    color: $heading-color;
+	border-bottom: none;
+	}
 }
 
 .site-description {
@@ -374,7 +379,7 @@ img {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
+  font-family: $heading-font;
   font-size: 18px;
 
   @include mobile {
@@ -386,10 +391,11 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $darkGray;
+    color: $heading-color;
     text-align: right;
-    font-weight: 300;
+    font-weight: bold;
     letter-spacing: 1px;
+	border-bottom: none;
 
     @include mobile {
       margin: 0 10px;
@@ -440,6 +446,7 @@ nav {
         color: $tag-index-label-color;
         background-color: $tag-index-label-background-color;
         border-radius: 3px;
+		border-bottom: none;
       }
     }
   }
