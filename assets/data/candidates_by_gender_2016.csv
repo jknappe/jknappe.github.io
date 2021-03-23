@@ -1,0 +1,41 @@
+constituency, seats, candidates, candidates_female, candidates_female_pc, elected_female, elected_female_pc, candidates_male, candidates_male_pc, elected_male, elected_male_pc
+Carlow-Kilkenny, 5, 15, 4, 27, 1, 20, 11, 73, 4, 80
+Cavan-Monaghan, 4, 15, 5, 33, 2, 50, 10, 67, 2, 50
+Clare, 4, 16, 5, 31, 0, 0, 11, 69, 4, 100
+Cork East, 4, 15, 4, 27, 0, 0, 11, 73, 4, 100
+Cork North-Central, 4, 14, 2, 14, 0, 0, 12, 86, 4, 100
+Cork North-West, 3, 13, 2, 15, 0, 0, 11, 85, 3, 100
+Cork South-Central, 4, 15, 3, 20, 0, 0, 12, 80, 4, 100
+Cork South-West, 3, 11, 5, 45, 1, 33, 6, 55, 2, 67
+Donegal, 5, 16, 3, 19, 0, 0, 13, 81, 5, 100
+Dublin Bay North, 5, 20, 5, 25, 1, 20, 15, 75, 4, 80
+Dublin Bay South, 4, 14, 4, 29, 1, 25, 10, 71, 3, 75
+Dublin Central, 3, 15, 7, 47, 2, 67, 8, 53, 1, 33
+Dublin Fingal, 5, 15, 4, 27, 2, 40, 11, 73, 3, 60
+Dublin Mid-West, 4, 15, 5, 33, 1, 25, 10, 67, 3, 75
+Dublin North-West, 3, 11, 4, 36, 1, 33, 7, 64, 2, 67
+Dublin Rathdown, 3, 9, 4, 44, 2, 67, 5, 56, 1, 33
+Dublin South-Central, 4, 13, 5, 38, 3, 75, 8, 62, 1, 25
+Dublin South-West, 5, 21, 8, 38, 1, 20, 13, 62, 4, 80
+Dublin West, 4, 11, 4, 36, 2, 50, 7, 64, 2, 50
+Dun Laoghaire, 3, 11, 5, 45, 2, 67, 6, 55, 1, 33
+Galway East, 3, 10, 4, 40, 1, 33, 6, 60, 2, 67
+Galway West, 5, 20, 5, 25, 2, 40, 15, 75, 3, 60
+Kerry, 5, 16, 3, 19, 0, 0, 13, 81, 5, 100
+Kildare North, 4, 14, 5, 36, 1, 25, 9, 64, 3, 75
+Kildare South, 3, 9, 5, 56, 1, 33, 4, 44, 2, 67
+Laois, 3, 6, 2, 33, 0, 0, 4, 67, 3, 100
+Limerick City, 4, 11, 3, 27, 1, 25, 8, 73, 3, 75
+Limerick County, 3, 10, 0, 0, 0, 0, 10, 100, 3, 100
+Longford-Westmeath, 4, 18, 5, 28, 0, 0, 13, 72, 4, 100
+Louth, 5, 16, 4, 25, 1, 20, 12, 75, 4, 80
+Mayo, 4, 16, 4, 25, 1, 25, 12, 75, 3, 75
+Meath East, 3, 12, 5, 42, 2, 67, 7, 58, 1, 33
+Meath West, 3, 9, 1, 11, 0, 0, 8, 89, 3, 100
+Offaly, 3, 11, 4, 36, 2, 67, 7, 64, 1, 33
+Roscommon-Galway, 3, 12, 4, 33, 0, 0, 8, 67, 3, 100
+Sligo-Leitrim, 4, 18, 3, 17, 0, 0, 15, 83, 4, 100
+Tipperary, 5, 13, 2, 15, 0, 0, 11, 85, 5, 100
+Waterford, 4, 12, 5, 42, 1, 25, 7, 58, 3, 75
+Wexford, 5, 17, 5, 29, 0, 0, 12, 71, 5, 100
+Wicklow, 5, 16, 6, 38, 0, 0, 10, 63, 5, 100

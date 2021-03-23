@@ -24,7 +24,7 @@ The only thing we really need to know at this stage about the STV voting system 
 - Every constituency sends between 3 and 5 candidates into parliament
 - A party can run more than one candidate in each constituency in hope to gain more than one seat from that constituency
 
-In the [final election results report of 2016](https://data.oireachtas.ie/ie/oireachtas/electoralProcess/electionResults/dail/2016/2016-04-28_32nd-dail-general-election-results_en.pdf) there are overview tables on gender distribution in the appendix. I copied the data into a CSV file and cleaned them up a bit; you can [download the CSV file here](/data/irish_election_results_2016.csv) if you want to follow along. The data is structured as follows:
+In the [final election results report of 2016](https://data.oireachtas.ie/ie/oireachtas/electoralProcess/electionResults/dail/2016/2016-04-28_32nd-dail-general-election-results_en.pdf) there are overview tables on gender distribution in the appendix. I copied the data into a CSV file and cleaned them up a bit; you can [download the CSV file here](/assets/data/irish_election_results_2016.csv) if you want to follow along. The data is structured as follows:
 
 ```{output}
 'data.frame':	40 obs. of  65 variables:
