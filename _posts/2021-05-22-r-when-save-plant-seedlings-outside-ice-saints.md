@@ -61,7 +61,7 @@ library(stringr)
 # Data import
 #==================================
 
-temperature_potsdam_hist <-
+temperature_potsdam_hist =
     # load data
     read_delim(file = "data/produkt_tu_stunde_18930101_20201231_03987.txt",
                delim = ";") %>%
@@ -72,7 +72,7 @@ temperature_potsdam_hist <-
     select(datetime, temperature) %>%
     mutate(location = "Potsdam")
 
-temperature_potsdam_recent <-
+temperature_potsdam_recent =
     # load data
     read_delim(file = "data/produkt_zehn_min_tu_20191117_20210519_03987.txt",
                delim = ";") %>%
@@ -90,7 +90,7 @@ temperature_potsdam_recent <-
     # add location label
     mutate(location = "Potsdam")
 
-temperature_leipzig_hist <- 
+temperature_leipzig_hist = 
     read_delim(file = "data/produkt_tu_stunde_19510101_20201231_02928.txt",
                delim = ";") %>%
     rename(temperature = TT_TU) %>%
@@ -100,7 +100,7 @@ temperature_leipzig_hist <-
     select(datetime, temperature) %>%
     mutate(location = "Leipzig")
 
-temperature_leipzig_recent <-
+temperature_leipzig_recent =
     # load data
     read_delim(file = "data/produkt_zehn_min_tu_20191117_20210519_02928.txt",
                delim = ";") %>%
@@ -234,7 +234,7 @@ Next, we will calculate the probability of frost free nights following each day 
 # Calculate probability of last frost having passed
 #==================================
 
-last_frost_probability <-
+last_frost_probability =
     last_frost %>%
     # remove years without data
     drop_na() %>%
@@ -303,21 +303,21 @@ Also, if someone knows a more elegant way to extract the model predictions while
 #==================================
 
 # define logit function 
-logit_model  <- function(df) {
+logit_model  = function(df) {
     glm(prob_cum ~ day_month, 
         data = df, 
         family = binomial(logit))
 }  
 
 # create a date range for the model prediction/interpolation
-fit_dates <-
+fit_dates =
     tibble(day_month = 
                date_seq(from = as.Date("0000-01-01"), 
                         to = as.Date("0000-05-31"), 
                         by = 1))
 
 # fit the model and interpolate
-last_frost_model <-
+last_frost_model =
     last_frost_probability %>%
     # subset relevant columns
     select(location, prob_cum, day_month) %>%
