@@ -14,7 +14,7 @@ layout: null
         {% for post in site.tags["R"] %}
             <item>
                 <title>{{ post.title | xml_escape }}</title>
-				<author>liaomovie2@gmail.com (Yongfu, Liao)</author>
+				<author>jan.knappe@gmail.com (Jan Knappe)</author>
                 <description>{{ post.content | xml_escape }}</description>
                 <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
                 <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
